@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="addLR.css">
+<script src="addLR.js"></script>
+<title>Hello, world!</title>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="payment.css">
+<script src="payment.js"></script>
+</head>
+
+<body>
+  <div class="page-wrapper background top_style padding font-poppins">
+    <div class="wrapper wrapper_width">
+      <div class="card card_width">
+
+        <div class="card-body">
+          
+          <form action="updateLR.php" method="POST" target="_blank">
+            <div class="input-group">
+              <label class="label">Edit LR No.</label>
+              <div>
+                <div class="choices" data-type="select-one" role="combobox" tabindex="0" aria-autocomplete="list"
+                  aria-haspopup="true" aria-expanded="false" dir="ltr">
+                  <div class="choices__inner"><select id="choices-lr" name="lrn" required=""
+                      placeholder="Select upto 30 tags" class="choices__input is-hidden" tabindex="-1"
+                      aria-hidden="true" data-choice="active">
+                      <option value="2243" selected=""> HR74B5797-2243</option>
+                    </select>
+                    <div class="choices__list choices__list--single">
+                      <div class="choices__item choices__item--selectable" data-item="" data-id="1" data-value="2243"
+                        data-custom-properties="null" data-deletable="" aria-selected="true">
+                        HR74B5797-2243
+                       <button type="button" class="choices__button" data-button="" aria-label="Remove item: '2243'">
+                          Remove item
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="choices__list choices__list--dropdown" aria-expanded="false"><input type="text"
+                      class="choices__input choices__input--cloned" autocomplete="off" autocapitalize="off"
+                      spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="">
+                    <div class="choices__list" dir="ltr" role="listbox">
+                      <div class="choices__item choices__item--choice choices__item--selectable is-highlighted"
+                        data-select-text="Press to select" data-choice="" data-id="1" data-value="2243"
+                        data-choice-selectable="" id="choices--choices-lr-item-choice-1" role="option"
+                        aria-selected="true">
+                        HR74B5797-2243
+                      </div>
+                      <div class="choices__item choices__item--choice choices__item--selectable is-highlighted"
+                        data-select-text="Press to select" data-choice="" data-id="1" data-value="2243"
+                        data-choice-selectable="" id="choices--choices-lr-item-choice-1" role="option"
+                        aria-selected="true">
+                        HR74B5797-2243
+                      </div>
+                      <div class="choices__item choices__item--choice choices__item--selectable is-highlighted"
+                        data-select-text="Press to select" data-choice="" data-id="1" data-value="2243"
+                        data-choice-selectable="" id="choices--choices-lr-item-choice-1" role="option"
+                        aria-selected="true">
+                        HR74B5797-2243
+                      </div>
+                      <div class="choices__item choices__item--choice choices__item--selectable is-highlighted"
+                        data-select-text="Press to select" data-choice="" data-id="1" data-value="2243"
+                        data-choice-selectable="" id="choices--choices-lr-item-choice-1" role="option"
+                        aria-selected="true">
+                        HR74B5797-2243
+                      </div>
+                  
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="padding_top">
+                <button class="btn btn--radius-2 btn--blue" type="submit" name="edit" value="Edit">Edit</button>
+
+              </div>
+            </div>
+          </form>
+
+          <h2 class="title">Fill LR For CCT Services</h2>
+          <form action="generateLRNewpdf.html" method="GET" target="_blank">
+
+            <!--  <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                            <label class="label">Employe Name</label>
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="ename">
+                                    <option disabled="disabled" selected="selected">Choose option</option>
+                                    <option value="Shashikant">Shashikant</option>
+                                    <option value="Deepak">Deepak</option>
+                                    <option value="Chandar">Chandar</option>
+                                    <option value="Alok">Alok</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Voucher No.</label>
+                                    <input class="input--style-4" type="text" readonly name="vouchno" value="">
+                                </div> 
+                            </div>
+                        </div> -->
+            <div class="row row-space">
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="radio-container m-r-45">OFFICE COPY
+                    <input type="radio" checked="checked" name="status" value="OFFICE COPY">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="radio-container m-r-45">CONSIGNOR COPY
+                    <input type="radio" name="status" value="CONSIGNOR COPY">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="radio-container m-r-45">CONSIGNEE COPY
+                    <input type="radio" name="status" value="CONSIGNEE COPY">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="radio-container m-r-45">DRIVER COPY
+                    <input type="radio" name="status" value="DRIVER COPY">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row row-space">
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">CONSIGNOR NAME</label>
+                  <input class="input--style-4" type="text" name="consignorname" value="">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">GST NO.</label>
+                  <input class="input--style-4" type="text" name="consignorgst">
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">MOBILE NO.</label>
+                  <input class="input--style-4" type="text" name="consignornumber">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">ADDRESS</label>
+                  <input class="input--style-4" type="text" name="consignoradd">
+                </div>
+              </div>
+            </div>
+
+            <div class="row row-space">
+              <div class="col-3">
+                <div class="input-group">
+                  <label class="label">STATE</label>
+                  <div class="" style="width: 280px;">
+                    <div class="choices" data-type="select-one" role="combobox" tabindex="0" aria-autocomplete="list"
+                      aria-haspopup="true" aria-expanded="false" dir="ltr">
+                      <div class="choices__inner"><select id="consignorstate" name="consignorstate"
+                          placeholder="Select upto 30 tags" class="choices__input is-hidden" tabindex="-1"
+                          aria-hidden="true" data-choice="active">
+                          <option value="Andaman and Nicobar Islands" selected="">Andaman and Nicobar Islands</option>
+                        </select>
+                        <div class="choices__list choices__list--single">
+                          <div class="choices__item choices__item--selectable" data-item="" data-id="1"
+                            data-value="Andaman and Nicobar Islands" data-custom-properties="null" data-deletable=""
+                            aria-selected="true">
+                            Andaman and Nicobar Islands
+                            <!--
+       --><button type="button" class="choices__button" data-button=""
+                              aria-label="Remove item: 'Andaman and Nicobar Islands'">
+                              Remove item
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="choices__list choices__list--dropdown" aria-expanded="false"><input type="text"
+                          class="choices__input choices__input--cloned" autocomplete="off" autocapitalize="off"
+                          spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="">
+                        <div class="choices__list" dir="ltr" role="listbox">
+                          <div class="choices__item choices__item--choice choices__item--selectable is-highlighted"
+                            data-select-text="Press to select" data-choice="" data-id="1"
+                            data-value="Andaman and Nicobar Islands" data-choice-selectable=""
+                            id="choices--consignorstate-item-choice-1" role="option" aria-selected="true">
+                            Andaman and Nicobar Islands
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="2" data-value="Andhra Pradesh"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-2" role="option">
+                            Andhra Pradesh
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="3" data-value="Arunachal Pradesh"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-3" role="option">
+                            Arunachal Pradesh
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="4" data-value="Assam"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-4" role="option">
+                            Assam
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="5" data-value="Chandigarh"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-5" role="option">
+                            Chandigarh
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="6" data-value="Chhattisgarh"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-6" role="option">
+                            Chhattisgarh
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="7"
+                            data-value="Dadra and Nagar Haveli" data-choice-selectable=""
+                            id="choices--consignorstate-item-choice-7" role="option">
+                            Dadra and Nagar Haveli
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="8" data-value="Daman and Diu"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-8" role="option">
+                            Daman and Diu
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="9" data-value="Delhi"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-9" role="option">
+                            Delhi
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="10" data-value="Goa"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-10" role="option">
+                            Goa
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="11" data-value="Gujarat"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-11" role="option">
+                            Gujarat
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="12" data-value="Haryana"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-12" role="option">
+                            Haryana
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="13" data-value="Himachal Pradesh"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-13" role="option">
+                            Himachal Pradesh
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="14"
+                            data-value="Jammu and Kashmir" data-choice-selectable=""
+                            id="choices--consignorstate-item-choice-14" role="option">
+                            Jammu and Kashmir
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="15" data-value="Jharkhand"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-15" role="option">
+                            Jharkhand
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="16" data-value="Karnataka"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-16" role="option">
+                            Karnataka
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="17" data-value="Kerala"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-17" role="option">
+                            Kerala
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="18" data-value="Ladakh"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-18" role="option">
+                            Ladakh
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="19" data-value="Lakshadweep"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-19" role="option">
+                            Lakshadweep
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="20" data-value="Madhya Pradesh"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-20" role="option">
+                            Madhya Pradesh
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="21" data-value="Maharashtra"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-21" role="option">
+                            Maharashtra
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="22" data-value="Manipur"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-22" role="option">
+                            Manipur
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="23" data-value="Meghalaya"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-23" role="option">
+                            Meghalaya
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="24" data-value="Mizoram"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-24" role="option">
+                            Mizoram
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="25" data-value="Nagaland"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-25" role="option">
+                            Nagaland
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="26" data-value="Odisha"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-26" role="option">
+                            Odisha
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="27" data-value="Puducherry"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-27" role="option">
+                            Puducherry
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="28" data-value="Punjab"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-28" role="option">
+                            Punjab
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="29" data-value="Rajasthan"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-29" role="option">
+                            Rajasthan
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="30" data-value="Sikkim"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-30" role="option">
+                            Sikkim
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="31" data-value="Tamil Nadu"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-31" role="option">
+                            Tamil Nadu
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="32" data-value="Telangana"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-32" role="option">
+                            Telangana
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="33" data-value="Tripura"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-33" role="option">
+                            Tripura
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="34" data-value="Uttar Pradesh"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-34" role="option">
+                            Uttar Pradesh
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="35" data-value="Uttarakhand"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-35" role="option">
+                            Uttarakhand
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="36" data-value="West Bengal"
+                            data-choice-selectable="" id="choices--consignorstate-item-choice-36" role="option">
+                            West Bengal
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                  <label class="label">City</label>
+                  <div class="" style="width: 280px;">
+                    <div class="choices" data-type="select-one" role="combobox" tabindex="0" aria-autocomplete="list"
+                      aria-haspopup="true" aria-expanded="false" dir="ltr">
+                      <div class="choices__inner"><select id="consignorcity" name="consignorcity"
+                          placeholder="Select upto 30 tags" class="choices__input is-hidden" tabindex="-1"
+                          aria-hidden="true" data-choice="active"></select>
+                        <div class="choices__list choices__list--single"></div>
+                      </div>
+                      <div class="choices__list choices__list--dropdown" aria-expanded="false"><input type="text"
+                          class="choices__input choices__input--cloned" autocomplete="off" autocapitalize="off"
+                          spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="">
+                        <div class="choices__list" dir="ltr" role="listbox">
+                          <div class="choices__item choices__item--choice has-no-choices">
+                            No choices to choose from
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                  <label class="label">PIN CODE</label>
+                  <input class="input--style-4" type="text" name="consignorpin">
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row row-space">
+
+              <div class="col-3">
+                <div class="input-group">
+                  <label class="label">INVOICE NO</label>
+                  <input class="input--style-4" type="text" name="invoice">
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                  <label class="label">INVOICE DATE</label>
+                  <div class="input-group-icon">
+                    <input class="input--style-4 js-datepicker" id="invoicedate" type="text" name="invoicedate">
+                    <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                  <label class="label">INVOICE VALUE</label>
+                  <input class="input--style-4" type="text" name="invoicevalue">
+                </div>
+              </div>
+            </div>
+
+            <div class="row row-space">
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">CONSIGNEE NAME:</label>
+                  <input class="input--style-4" type="text" name="consigneename">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">GST NO.</label>
+                  <input class="input--style-4" type="text" name="consigneegst">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">MOBILE NO</label>
+                  <input class="input--style-4" type="text" name="consigneenumber">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">ADDRESS</label>
+                  <input class="input--style-4" type="text" name="consigneeadd">
+                </div>
+              </div>
+            </div>
+            <div class="row row-space">
+              <div class="col-3">
+                <div class="input-group">
+                  <label class="label">STATE</label>
+                  <div class="" style="width: 280px;">
+                    <div class="choices" data-type="select-one" role="combobox" tabindex="0" aria-autocomplete="list"
+                      aria-haspopup="true" aria-expanded="false" dir="ltr">
+                      <div class="choices__inner"><select id="consigneestate" name="consigneestate"
+                          placeholder="Select upto 30 tags" class="choices__input is-hidden" tabindex="-1"
+                          aria-hidden="true" data-choice="active">
+                          <option value="Andaman and Nicobar Islands" selected="">Andaman and Nicobar Islands</option>
+                        </select>
+                        <div class="choices__list choices__list--single">
+                          <div class="choices__item choices__item--selectable" data-item="" data-id="1"
+                            data-value="Andaman and Nicobar Islands" data-custom-properties="null" data-deletable=""
+                            aria-selected="true">
+                            Andaman and Nicobar Islands
+                            <!--
+       --><button type="button" class="choices__button" data-button=""
+                              aria-label="Remove item: 'Andaman and Nicobar Islands'">
+                              Remove item
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="choices__list choices__list--dropdown" aria-expanded="false"><input type="text"
+                          class="choices__input choices__input--cloned" autocomplete="off" autocapitalize="off"
+                          spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="">
+                        <div class="choices__list" dir="ltr" role="listbox">
+                          <div class="choices__item choices__item--choice choices__item--selectable is-highlighted"
+                            data-select-text="Press to select" data-choice="" data-id="1"
+                            data-value="Andaman and Nicobar Islands" data-choice-selectable=""
+                            id="choices--consigneestate-item-choice-1" role="option" aria-selected="true">
+                            Andaman and Nicobar Islands
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="2" data-value="Andhra Pradesh"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-2" role="option">
+                            Andhra Pradesh
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="3" data-value="Arunachal Pradesh"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-3" role="option">
+                            Arunachal Pradesh
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="4" data-value="Assam"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-4" role="option">
+                            Assam
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="5" data-value="Assam"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-5" role="option">
+                            Assam
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="6" data-value="Chandigarh"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-6" role="option">
+                            Chandigarh
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="7" data-value="Chhattisgarh"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-7" role="option">
+                            Chhattisgarh
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="8"
+                            data-value="Dadra and Nagar Haveli" data-choice-selectable=""
+                            id="choices--consigneestate-item-choice-8" role="option">
+                            Dadra and Nagar Haveli
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="9" data-value="Daman and Diu"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-9" role="option">
+                            Daman and Diu
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="10" data-value="Delhi"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-10" role="option">
+                            Delhi
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="11" data-value="Goa"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-11" role="option">
+                            Goa
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="12" data-value="Gujarat"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-12" role="option">
+                            Gujarat
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="13" data-value="Haryana"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-13" role="option">
+                            Haryana
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="14" data-value="Himachal Pradesh"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-14" role="option">
+                            Himachal Pradesh
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="15"
+                            data-value="Jammu and Kashmir" data-choice-selectable=""
+                            id="choices--consigneestate-item-choice-15" role="option">
+                            Jammu and Kashmir
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="16" data-value="Jharkhand"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-16" role="option">
+                            Jharkhand
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="17" data-value="Karnataka"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-17" role="option">
+                            Karnataka
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="18" data-value="Kerala"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-18" role="option">
+                            Kerala
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="19" data-value="Ladakh"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-19" role="option">
+                            Ladakh
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="20" data-value="Lakshadweep"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-20" role="option">
+                            Lakshadweep
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="21" data-value="Madhya Pradesh"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-21" role="option">
+                            Madhya Pradesh
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="22" data-value="Maharashtra"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-22" role="option">
+                            Maharashtra
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="23" data-value="Manipur"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-23" role="option">
+                            Manipur
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="24" data-value="Meghalaya"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-24" role="option">
+                            Meghalaya
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="25" data-value="Mizoram"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-25" role="option">
+                            Mizoram
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="26" data-value="Nagaland"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-26" role="option">
+                            Nagaland
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="27" data-value="Odisha"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-27" role="option">
+                            Odisha
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="28" data-value="Puducherry"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-28" role="option">
+                            Puducherry
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="29" data-value="Punjab"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-29" role="option">
+                            Punjab
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="30" data-value="Rajasthan"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-30" role="option">
+                            Rajasthan
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="31" data-value="Sikkim"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-31" role="option">
+                            Sikkim
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="32" data-value="Tamil Nadu"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-32" role="option">
+                            Tamil Nadu
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="33" data-value="Telangana"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-33" role="option">
+                            Telangana
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="34" data-value="Tripura"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-34" role="option">
+                            Tripura
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="35" data-value="Uttar Pradesh"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-35" role="option">
+                            Uttar Pradesh
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="36" data-value="Uttarakhand"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-36" role="option">
+                            Uttarakhand
+                          </div>
+                          <div class="choices__item choices__item--choice choices__item--selectable"
+                            data-select-text="Press to select" data-choice="" data-id="37" data-value="West Bengal"
+                            data-choice-selectable="" id="choices--consigneestate-item-choice-37" role="option">
+                            West Bengal
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                  <label class="label">City</label>
+                  <div class="" style="width: 280px;">
+                    <div class="choices" data-type="select-one" role="combobox" tabindex="0" aria-autocomplete="list"
+                      aria-haspopup="true" aria-expanded="false" dir="ltr">
+                      <div class="choices__inner"><select id="consigneecity" name="consigneecity"
+                          placeholder="Select upto 30 tags" class="choices__input is-hidden" tabindex="-1"
+                          aria-hidden="true" data-choice="active"></select>
+                        <div class="choices__list choices__list--single"></div>
+                      </div>
+                      <div class="choices__list choices__list--dropdown" aria-expanded="false"><input type="text"
+                          class="choices__input choices__input--cloned" autocomplete="off" autocapitalize="off"
+                          spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="">
+                        <div class="choices__list" dir="ltr" role="listbox">
+                          <div class="choices__item choices__item--choice has-no-choices">
+                            No choices to choose from
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">PIN CODE</label>
+                  <input class="input--style-4" type="text" name="consigneepin">
+                </div>
+              </div>
+
+            </div>
+            <div class="row row-space">
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">LR NO. </label>
+                  <input class="input--style-4" type="text" name="lrno" value="2718">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">LR DATE</label>
+                  <div class="input-group-icon">
+                    <input class="input--style-4 js-datepicker" id="lrdate" type="text" name="lrdate">
+                    <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">TRUCK/VEHICLE NO.</label>
+                  <input class="input--style-4" type="text" name="vehicleno">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">DRIVER NO.</label>
+                  <input class="input--style-4" type="text" name="drivernumber">
+                </div>
+              </div>
+            </div>
+            <div class="row row-space">
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">FROM </label>
+                  <input class="input--style-4" type="text" name="from">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">TO</label>
+                  <input class="input--style-4" type="text" name="to">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">DL NO.</label>
+                  <input class="input--style-4" type="text" name="dlnumber">
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">PAYMENT STATUS: TO PAY/ TO BE BILLED</label>
+                  <div class="p-t-10">
+                    <label class="radio-container m-r-45">To Pay
+                      <input type="radio" checked="checked" name="paymentstatus" value="Y">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-container">To Be Billed
+                      <input type="radio" name="paymentstatus" value="N">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row row-space">
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">PRODUCT/ MATERIAL </label>
+                  <input class="input--style-4" type="text" name="product">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">PACKAGING TYPE</label>
+                  <input class="input--style-4" type="text" name="packagetype">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">HSN CODE</label>
+                  <input class="input--style-4" type="text" name="hsncode">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">ARTICLES PACKAGES</label>
+                  <input class="input--style-4" type="text" name="articlepackage">
+                </div>
+              </div>
+            </div>
+
+            <div class="row row-space">
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">ACTUAL WEIGHT</label>
+                  <input class="input--style-4" type="text" name="actwt">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">CHARGO WEIGHT</label>
+                  <input class="input--style-4" type="text" name="chargowt">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">FREIGHT CHARGES</label>
+                  <input class="input--style-4" type="text" name="freightcharge">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">OTHER REMARKS</label>
+                  <input class="input--style-4" type="text" name="otcharge">
+                </div>
+              </div>
+            </div>
+            <div class="row row-space">
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">Booking No.</label>
+                  <input class="input--style-4" type="text" name="bookingno">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">Seal No.</label>
+                  <input class="input--style-4" type="text" name="sealno">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">Container No.</label>
+                  <input class="input--style-4" type="text" name="containerno">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="input-group">
+                  <label class="label">PO No.</label>
+                  <input class="input--style-4" type="text" name="ponumber">
+                </div>
+              </div>
+            </div>
+            <div class="row row-space">
+              <div class="col-2">
+                <div class="input-group">
+                  <label class="label">DETENTION CHARGES</label>
+                  <input class="input--style-4" type="text" name="detentioncharge">
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="input-group">
+                  <label class="label">EBAY BILL</label>
+                  <input class="input--style-4" type="text" name="ebaybill">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row row-space">
+              <div class="col-3">
+                <div class="input-group">
+                  <label class="label">BANK NAME <b> ICICI BANK</b></label>
+                  <input class="input--style-4" type="hidden" name="ICICI BANK">
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                  <label class="label">BANK A/C NO. <b> 325405000476 </b></label>
+                  <input class="input--style-4" type="hidden" name="325405000476">
+
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                  <label class="label">IFSC CODE: <b>ICIC0003254</b></label>
+                  <input class="input--style-4" type="hidden" name="325405000476">
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="padding_top">
+              <button class="btn btn--radius-2 btn--blue" type="submit" name="generate-pdf"
+                value="generate-pdf">Submit</button>
+              <button class="btn btn--radius-2 btn--blue" type="submit" name="view-pdf" value="view-pdf">View
+                File</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Jquery JS-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <!-- Vendor JS-->
+  <script src="vendor/select2/select2.min.js"></script>
+  <script src="vendor/datepicker/moment.min.js"></script>
+  <script src="vendor/datepicker/daterangepicker.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <!-- Main JS-->
+  <script src="js/global.js"></script>
+  <div class="daterangepicker dropdown-menu ltr single opensright">
+    <div class="calendar left single" style="display: block;">
+      <div class="daterangepicker_input"><input class="input-mini form-control" type="text" name="daterangepicker_start"
+          value="" style="display: none;"><i class="fa fa-calendar glyphicon glyphicon-calendar"
+          style="display: none;"></i>
+        <div class="calendar-time" style="display: none;">
+          <div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i>
+        </div>
+      </div>
+      <div class="calendar-table"></div>
+    </div>
+    <div class="calendar right" style="display: none;">
+      <div class="daterangepicker_input"><input class="input-mini form-control" type="text" name="daterangepicker_end"
+          value="" style="display: none;"><i class="fa fa-calendar glyphicon glyphicon-calendar"
+          style="display: none;"></i>
+        <div class="calendar-time" style="display: none;">
+          <div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i>
+        </div>
+      </div>
+      <div class="calendar-table"></div>
+    </div>
+    <div class="ranges" style="display: none;">
+      <div class="range_inputs"><button class="applyBtn btn btn-sm btn-success" disabled="disabled"
+          type="button">Apply</button> <button class="cancelBtn btn btn-sm btn-default" type="button">Cancel</button>
+      </div>
+    </div>
+  </div>
+  <div class="daterangepicker dropdown-menu ltr single opensright">
+    <div class="calendar left single" style="display: block;">
+      <div class="daterangepicker_input"><input class="input-mini form-control" type="text" name="daterangepicker_start"
+          value="" style="display: none;"><i class="fa fa-calendar glyphicon glyphicon-calendar"
+          style="display: none;"></i>
+        <div class="calendar-time" style="display: none;">
+          <div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i>
+        </div>
+      </div>
+      <div class="calendar-table"></div>
+    </div>
+    <div class="calendar right" style="display: none;">
+      <div class="daterangepicker_input"><input class="input-mini form-control" type="text" name="daterangepicker_end"
+          value="" style="display: none;"><i class="fa fa-calendar glyphicon glyphicon-calendar"
+          style="display: none;"></i>
+        <div class="calendar-time" style="display: none;">
+          <div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i>
+        </div>
+      </div>
+      <div class="calendar-table"></div>
+    </div>
+    <div class="ranges" style="display: none;">
+      <div class="range_inputs"><button class="applyBtn btn btn-sm btn-success" disabled="disabled"
+          type="button">Apply</button> <button class="cancelBtn btn btn-sm btn-default" type="button">Cancel</button>
+      </div>
+    </div>
+  </div>
+  <script type="text/Javascript">
+
+
+    $(document).ready(function(){
+    var consignorcityArr=[];
+    var consigneecityArr=[];
+    
+    var consignorCity = new Choices('#consignorcity', {
+    
+        choices: [],
+        // choices: [   { value: 'Shashikant', label: 'Shashikant' },
+        //    { value: 'Deepak', label: 'Deepak' },
+        //       { value: 'Chandar', label: 'Chandar' },
+        //          { value: 'Alok', label: 'Alok' },],  
+    removeItemButton: true,
+    maxItemCount:38,
+    
+     
+    
+    });
+    var consigneeCity = new Choices('#consigneecity', {
+    
+        choices: [],
+        // choices: [   { value: 'Shashikant', label: 'Shashikant' },
+        //    { value: 'Deepak', label: 'Deepak' },
+        //       { value: 'Chandar', label: 'Chandar' },
+        //          { value: 'Alok', label: 'Alok' },],  
+    removeItemButton: true,
+    maxItemCount:38,
+    
+     
+    
+    });
+         $( "#consignorstate" ).change(function() {
+        //cityArr.push();
+     
+      
+       
+     var jsVal = $( "#consignorstate" ).val();
+     //alert(jsVal);
+    //const myJSON = JSON.stringify(jsVal);
+    //var results= 'Welcome to Pakainfo';
+    
+    consignorcityArr={"Andaman and Nicobar Islands":["Port Blair*"],"Andhra Pradesh":["Anantapur","Chittoor","East Godavari","Guntur","Krishna","Kurnool","Nellore","Prakasam","Srikakulam","Visakhapatnam","Vizianagaram","West Godavari","YSR Kadapa"],"Arunachal Pradesh":["Tawang","West Kameng","East Kameng","Papum Pare","Kurung Kumey","Kra Daadi","Lower Subansiri","Upper Subansiri","West Siang","East Siang","Siang","Upper Siang","Lower Siang","Lower Dibang Valley","Dibang Valley","Anjaw","Lohit","Namsai","Changlang","Tirap","Longding"],"Assam":["Baksa","Barpeta","Biswanath","Bongaigaon","Cachar","Charaideo","Chirang","Darrang","Dhemaji","Dhubri","Dibrugarh","Goalpara","Golaghat","Hailakandi","Hojai","Jorhat","Kamrup Metropolitan","Kamrup","Karbi Anglong","Karimganj","Kokrajhar","Lakhimpur","Majuli","Morigaon","Nagaon","Nalbari","Dima Hasao","Sivasagar","Sonitpur","South Salmara-Mankachar","Tinsukia","Udalguri","West Karbi Anglong"],"Bihar":["Araria","Arwal","Aurangabad","Banka","Begusarai","Bhagalpur","Bhojpur","Buxar","Darbhanga","East Champaran (Motihari)","Gaya","Gopalganj","Jamui","Jehanabad","Kaimur (Bhabua)","Katihar","Khagaria","Kishanganj","Lakhisarai","Madhepura","Madhubani","Munger (Monghyr)","Muzaffarpur","Nalanda","Nawada","Patna","Purnia (Purnea)","Rohtas","Saharsa","Samastipur","Saran","Sheikhpura","Sheohar","Sitamarhi","Siwan","Supaul","Vaishali","West Champaran"],"Chandigarh":["Chandigarh"],"Chhattisgarh":["Balod","Baloda Bazar","Balrampur","Bastar","Bemetara","Bijapur","Bilaspur","Dantewada (South Bastar)","Dhamtari","Durg","Gariyaband","Janjgir-Champa","Jashpur","Kabirdham (Kawardha)","Kanker (North Bastar)","Kondagaon","Korba","Korea (Koriya)","Mahasamund","Mungeli","Narayanpur","Raigarh","Raipur","Rajnandgaon","Sukma","Surajpur  ","Surguja"],"Dadra and Nagar Haveli (UT)":["Dadra & Nagar Haveli"],"Daman and Diu (UT)":["Daman","Diu"],"Delhi (NCT)":["Central Delhi","East Delhi","New Delhi","North Delhi","North East  Delhi","North West  Delhi","Shahdara","South Delhi","South East Delhi","South West  Delhi","West Delhi"],"Goa":["North Goa","South Goa"],"Gujarat":["Ahmedabad","Amreli","Anand","Aravalli","Banaskantha (Palanpur)","Bharuch","Bhavnagar","Botad","Chhota Udepur","Dahod","Dangs (Ahwa)","Devbhoomi Dwarka","Gandhinagar","Gir Somnath","Jamnagar","Junagadh","Kachchh","Kheda (Nadiad)","Mahisagar","Mehsana","Morbi","Narmada (Rajpipla)","Navsari","Panchmahal (Godhra)","Patan","Porbandar","Rajkot","Sabarkantha (Himmatnagar)","Surat","Surendranagar","Tapi (Vyara)","Vadodara","Valsad"],"Haryana":["Ambala","Bhiwani","Charkhi Dadri","Faridabad","Fatehabad","Gurgaon","Hisar","Jhajjar","Jind","Kaithal","Karnal","Kurukshetra","Mahendragarh","Mewat","Palwal","Panchkula","Panipat","Rewari","Rohtak","Sirsa","Sonipat","Yamunanagar"],"Himachal Pradesh":["Bilaspur","Chamba","Hamirpur","Kangra","Kinnaur","Kullu","Lahaul &amp; Spiti","Mandi","Shimla","Sirmaur (Sirmour)","Solan","Una"],"Jammu and Kashmir":["Anantnag","Bandipore","Baramulla","Budgam","Doda","Ganderbal","Jammu","Kargil","Kathua","Kishtwar","Kulgam","Kupwara","Leh","Poonch","Pulwama","Rajouri","Ramban","Reasi","Samba","Shopian","Srinagar","Udhampur"],"Jharkhand":["Bokaro","Chatra","Deoghar","Dhanbad","Dumka","East Singhbhum","Garhwa","Giridih","Godda","Gumla","Hazaribag","Jamtara","Khunti","Koderma","Latehar","Lohardaga","Pakur","Palamu","Ramgarh","Ranchi","Sahibganj","Seraikela-Kharsawan","Simdega","West Singhbhum"],"Karnataka":["Bagalkot","Ballari (Bellary)","Belagavi (Belgaum)","Bengaluru (Bangalore) Rural","Bengaluru (Bangalore) Urban","Bidar","Chamarajanagar","Chikballapur","Chikkamagaluru (Chikmagalur)","Chitradurga","Dakshina Kannada","Davangere","Dharwad","Gadag","Hassan","Haveri","Kalaburagi (Gulbarga)","Kodagu","Kolar","Koppal","Mandya","Mysuru (Mysore)","Raichur","Ramanagara","Shivamogga (Shimoga)","Tumakuru (Tumkur)","Udupi","Uttara Kannada (Karwar)","Vijayapura (Bijapur)","Yadgir"],"Kerala":["Alappuzha","Ernakulam","Idukki","Kannur","Kasaragod","Kollam","Kottayam","Kozhikode","Malappuram","Palakkad","Pathanamthitta","Thiruvananthapuram","Thrissur","Wayanad"],"Lakshadweep (UT)":["Agatti","Amini","Androth","Bithra","Chethlath","Kavaratti","Kadmath","Kalpeni","Kilthan","Minicoy"],"Madhya Pradesh":["Agar Malwa","Alirajpur","Anuppur","Ashoknagar","Balaghat","Barwani","Betul","Bhind","Bhopal","Burhanpur","Chhatarpur","Chhindwara","Damoh","Datia","Dewas","Dhar","Dindori","Guna","Gwalior","Harda","Hoshangabad","Indore","Jabalpur","Jhabua","Katni","Khandwa","Khargone","Mandla","Mandsaur","Morena","Narsinghpur","Neemuch","Panna","Raisen","Rajgarh","Ratlam","Rewa","Sagar","Satna","Sehore","Seoni","Shahdol","Shajapur","Sheopur","Shivpuri","Sidhi","Singrauli","Tikamgarh","Ujjain","Umaria","Vidisha"],"Maharashtra":["Ahmednagar","Akola","Amravati","Aurangabad","Beed","Bhandara","Buldhana","Chandrapur","Dhule","Gadchiroli","Gondia","Hingoli","Jalgaon","Jalna","Kolhapur","Latur","Mumbai City","Mumbai Suburban","Nagpur","Nanded","Nandurbar","Nashik","Osmanabad","Palghar","Parbhani","Pune","Raigad","Ratnagiri","Sangli","Satara","Sindhudurg","Solapur","Thane","Wardha","Washim","Yavatmal"],"Manipur":["Bishnupur","Chandel","Churachandpur","Imphal East","Imphal West","Jiribam","Kakching","Kamjong","Kangpokpi","Noney","Pherzawl","Senapati","Tamenglong","Tengnoupal","Thoubal","Ukhrul"],"Meghalaya":["East Garo Hills","East Jaintia Hills","East Khasi Hills","North Garo Hills","Ri Bhoi","South Garo Hills","South West Garo Hills ","South West Khasi Hills","West Garo Hills","West Jaintia Hills","West Khasi Hills"],"Mizoram":["Aizawl","Champhai","Kolasib","Lawngtlai","Lunglei","Mamit","Saiha","Serchhip"],"Nagaland":["Dimapur","Kiphire","Kohima","Longleng","Mokokchung","Mon","Peren","Phek","Tuensang","Wokha","Zunheboto"],"Odisha":["Angul","Balangir","Balasore","Bargarh","Bhadrak","Boudh","Cuttack","Deogarh","Dhenkanal","Gajapati","Ganjam","Jagatsinghapur","Jajpur","Jharsuguda","Kalahandi","Kandhamal","Kendrapara","Kendujhar (Keonjhar)","Khordha","Koraput","Malkangiri","Mayurbhanj","Nabarangpur","Nayagarh","Nuapada","Puri","Rayagada","Sambalpur","Sonepur","Sundargarh"],"Puducherry (UT)":["Karaikal","Mahe","Pondicherry","Yanam"],"Punjab":["Amritsar","Barnala","Bathinda","Faridkot","Fatehgarh Sahib","Fazilka","Ferozepur","Gurdaspur","Hoshiarpur","Jalandhar","Kapurthala","Ludhiana","Mansa","Moga","Muktsar","Nawanshahr (Shahid Bhagat Singh Nagar)","Pathankot","Patiala","Rupnagar","Sahibzada Ajit Singh Nagar (Mohali)","Sangrur","Tarn Taran"],"Rajasthan":["Ajmer","Alwar","Banswara","Baran","Barmer","Bharatpur","Bhilwara","Bikaner","Bundi","Chittorgarh","Churu","Dausa","Dholpur","Dungarpur","Hanumangarh","Jaipur","Jaisalmer","Jalore","Jhalawar","Jhunjhunu","Jodhpur","Karauli","Kota","Nagaur","Pali","Pratapgarh","Rajsamand","Sawai Madhopur","Sikar","Sirohi","Sri Ganganagar","Tonk","Udaipur"],"Sikkim":["East Sikkim","North Sikkim","South Sikkim","West Sikkim"],"Tamil Nadu":["Ariyalur","Chennai","Coimbatore","Cuddalore","Dharmapuri","Dindigul","Erode","Kanchipuram","Kanyakumari","Karur","Krishnagiri","Madurai","Nagapattinam","Namakkal","Nilgiris","Perambalur","Pudukkottai","Ramanathapuram","Salem","Sivaganga","Thanjavur","Theni","Thoothukudi (Tuticorin)","Tiruchirappalli","Tirunelveli","Tiruppur","Tiruvallur","Tiruvannamalai","Tiruvarur","Vellore","Viluppuram","Virudhunagar"],"Telangana":["Adilabad","Bhadradri Kothagudem","Hyderabad","Jagtial","Jangaon","Jayashankar Bhoopalpally","Jogulamba Gadwal","Kamareddy","Karimnagar","Khammam","Komaram Bheem Asifabad","Mahabubabad","Mahabubnagar","Mancherial","Medak","Medchal","Nagarkurnool","Nalgonda","Nirmal","Nizamabad","Peddapalli","Rajanna Sircilla","Rangareddy","Sangareddy","Siddipet","Suryapet","Vikarabad","Wanaparthy","Warangal (Rural)","Warangal (Urban)","Yadadri Bhuvanagiri"],"Tripura":["Dhalai","Gomati","Khowai","North Tripura","Sepahijala","South Tripura","Unakoti","West Tripura"],"Uttarakhand":["Almora","Bageshwar","Chamoli","Champawat","Dehradun","Haridwar","Nainital","Pauri Garhwal","Pithoragarh","Rudraprayag","Tehri Garhwal","Udham Singh Nagar","Uttarkashi"],"Uttar Pradesh":["Agra","Aligarh","Allahabad","Ambedkar Nagar","Amethi (Chatrapati Sahuji Mahraj Nagar)","Amroha (J.P. Nagar)","Auraiya","Azamgarh","Baghpat","Bahraich","Ballia","Balrampur","Banda","Barabanki","Bareilly","Basti","Bhadohi","Bijnor","Budaun","Bulandshahr","Chandauli","Chitrakoot","Deoria","Etah","Etawah","Faizabad","Farrukhabad","Fatehpur","Firozabad","Gautam Buddha Nagar","Ghaziabad","Ghazipur","Gonda","Gorakhpur","Hamirpur","Hapur (Panchsheel Nagar)","Hardoi","Hathras","Jalaun","Jaunpur","Jhansi","Kannauj","Kanpur Dehat","Kanpur Nagar","Kanshiram Nagar (Kasganj)","Kaushambi","Kushinagar (Padrauna)","Lakhimpur - Kheri","Lalitpur","Lucknow","Maharajganj","Mahoba","Mainpuri","Mathura","Mau","Meerut","Mirzapur","Moradabad","Muzaffarnagar","Pilibhit","Pratapgarh","RaeBareli","Rampur","Saharanpur","Sambhal (Bhim Nagar)","Sant Kabir Nagar","Shahjahanpur","Shamali (Prabuddh Nagar)","Shravasti","Siddharth Nagar","Sitapur","Sonbhadra","Sultanpur","Unnao","Varanasi"],"West Bengal":["Alipurduar","Bankura","Birbhum","Burdwan (Bardhaman)","Cooch Behar","Dakshin Dinajpur (South Dinajpur)","Darjeeling","Hooghly","Howrah","Jalpaiguri","Kalimpong","Kolkata","Malda","Murshidabad","Nadia","North 24 Parganas","Paschim Medinipur (West Medinipur)","Purba Medinipur (East Medinipur)","Purulia","South 24 Parganas","Uttar Dinajpur (North Dinajpur)"]};
+    //alert(cityArr[jsVal]);
+    // jQuery.each( cityArr, function( i, val ) {
+    //    cityArr[i]="{ value: "+val+", label: "+val+" },"
+    //alert(consignorcityArr[jsVal].length);
+    // });
+    //alert(cityArr[0]);
+    consignorCity.clearStore();
+    consignorCity.setValue(consignorcityArr[jsVal]);
+      
+    });
+    
+        $( "#consigneestate" ).change(function() {
+        //cityArr.push();
+        consigneecityArr=[];
+    
+     var jsVal = $( "#consigneestate" ).val();
+     //alert(jsVal);
+    //const myJSON = JSON.stringify(jsVal);
+    //var results= 'Welcome to Pakainfo';
+    
+    consigneecityArr={"Andaman and Nicobar Islands":["Port Blair*"],"Andhra Pradesh":["Anantapur","Chittoor","East Godavari","Guntur","Krishna","Kurnool","Nellore","Prakasam","Srikakulam","Visakhapatnam","Vizianagaram","West Godavari","YSR Kadapa"],"Arunachal Pradesh":["Tawang","West Kameng","East Kameng","Papum Pare","Kurung Kumey","Kra Daadi","Lower Subansiri","Upper Subansiri","West Siang","East Siang","Siang","Upper Siang","Lower Siang","Lower Dibang Valley","Dibang Valley","Anjaw","Lohit","Namsai","Changlang","Tirap","Longding"],"Assam":["Baksa","Barpeta","Biswanath","Bongaigaon","Cachar","Charaideo","Chirang","Darrang","Dhemaji","Dhubri","Dibrugarh","Goalpara","Golaghat","Hailakandi","Hojai","Jorhat","Kamrup Metropolitan","Kamrup","Karbi Anglong","Karimganj","Kokrajhar","Lakhimpur","Majuli","Morigaon","Nagaon","Nalbari","Dima Hasao","Sivasagar","Sonitpur","South Salmara-Mankachar","Tinsukia","Udalguri","West Karbi Anglong"],"Bihar":["Araria","Arwal","Aurangabad","Banka","Begusarai","Bhagalpur","Bhojpur","Buxar","Darbhanga","East Champaran (Motihari)","Gaya","Gopalganj","Jamui","Jehanabad","Kaimur (Bhabua)","Katihar","Khagaria","Kishanganj","Lakhisarai","Madhepura","Madhubani","Munger (Monghyr)","Muzaffarpur","Nalanda","Nawada","Patna","Purnia (Purnea)","Rohtas","Saharsa","Samastipur","Saran","Sheikhpura","Sheohar","Sitamarhi","Siwan","Supaul","Vaishali","West Champaran"],"Chandigarh":["Chandigarh"],"Chhattisgarh":["Balod","Baloda Bazar","Balrampur","Bastar","Bemetara","Bijapur","Bilaspur","Dantewada (South Bastar)","Dhamtari","Durg","Gariyaband","Janjgir-Champa","Jashpur","Kabirdham (Kawardha)","Kanker (North Bastar)","Kondagaon","Korba","Korea (Koriya)","Mahasamund","Mungeli","Narayanpur","Raigarh","Raipur","Rajnandgaon","Sukma","Surajpur  ","Surguja"],"Dadra and Nagar Haveli (UT)":["Dadra & Nagar Haveli"],"Daman and Diu (UT)":["Daman","Diu"],"Delhi (NCT)":["Central Delhi","East Delhi","New Delhi","North Delhi","North East  Delhi","North West  Delhi","Shahdara","South Delhi","South East Delhi","South West  Delhi","West Delhi"],"Goa":["North Goa","South Goa"],"Gujarat":["Ahmedabad","Amreli","Anand","Aravalli","Banaskantha (Palanpur)","Bharuch","Bhavnagar","Botad","Chhota Udepur","Dahod","Dangs (Ahwa)","Devbhoomi Dwarka","Gandhinagar","Gir Somnath","Jamnagar","Junagadh","Kachchh","Kheda (Nadiad)","Mahisagar","Mehsana","Morbi","Narmada (Rajpipla)","Navsari","Panchmahal (Godhra)","Patan","Porbandar","Rajkot","Sabarkantha (Himmatnagar)","Surat","Surendranagar","Tapi (Vyara)","Vadodara","Valsad"],"Haryana":["Ambala","Bhiwani","Charkhi Dadri","Faridabad","Fatehabad","Gurgaon","Hisar","Jhajjar","Jind","Kaithal","Karnal","Kurukshetra","Mahendragarh","Mewat","Palwal","Panchkula","Panipat","Rewari","Rohtak","Sirsa","Sonipat","Yamunanagar"],"Himachal Pradesh":["Bilaspur","Chamba","Hamirpur","Kangra","Kinnaur","Kullu","Lahaul &amp; Spiti","Mandi","Shimla","Sirmaur (Sirmour)","Solan","Una"],"Jammu and Kashmir":["Anantnag","Bandipore","Baramulla","Budgam","Doda","Ganderbal","Jammu","Kargil","Kathua","Kishtwar","Kulgam","Kupwara","Leh","Poonch","Pulwama","Rajouri","Ramban","Reasi","Samba","Shopian","Srinagar","Udhampur"],"Jharkhand":["Bokaro","Chatra","Deoghar","Dhanbad","Dumka","East Singhbhum","Garhwa","Giridih","Godda","Gumla","Hazaribag","Jamtara","Khunti","Koderma","Latehar","Lohardaga","Pakur","Palamu","Ramgarh","Ranchi","Sahibganj","Seraikela-Kharsawan","Simdega","West Singhbhum"],"Karnataka":["Bagalkot","Ballari (Bellary)","Belagavi (Belgaum)","Bengaluru (Bangalore) Rural","Bengaluru (Bangalore) Urban","Bidar","Chamarajanagar","Chikballapur","Chikkamagaluru (Chikmagalur)","Chitradurga","Dakshina Kannada","Davangere","Dharwad","Gadag","Hassan","Haveri","Kalaburagi (Gulbarga)","Kodagu","Kolar","Koppal","Mandya","Mysuru (Mysore)","Raichur","Ramanagara","Shivamogga (Shimoga)","Tumakuru (Tumkur)","Udupi","Uttara Kannada (Karwar)","Vijayapura (Bijapur)","Yadgir"],"Kerala":["Alappuzha","Ernakulam","Idukki","Kannur","Kasaragod","Kollam","Kottayam","Kozhikode","Malappuram","Palakkad","Pathanamthitta","Thiruvananthapuram","Thrissur","Wayanad"],"Lakshadweep (UT)":["Agatti","Amini","Androth","Bithra","Chethlath","Kavaratti","Kadmath","Kalpeni","Kilthan","Minicoy"],"Madhya Pradesh":["Agar Malwa","Alirajpur","Anuppur","Ashoknagar","Balaghat","Barwani","Betul","Bhind","Bhopal","Burhanpur","Chhatarpur","Chhindwara","Damoh","Datia","Dewas","Dhar","Dindori","Guna","Gwalior","Harda","Hoshangabad","Indore","Jabalpur","Jhabua","Katni","Khandwa","Khargone","Mandla","Mandsaur","Morena","Narsinghpur","Neemuch","Panna","Raisen","Rajgarh","Ratlam","Rewa","Sagar","Satna","Sehore","Seoni","Shahdol","Shajapur","Sheopur","Shivpuri","Sidhi","Singrauli","Tikamgarh","Ujjain","Umaria","Vidisha"],"Maharashtra":["Ahmednagar","Akola","Amravati","Aurangabad","Beed","Bhandara","Buldhana","Chandrapur","Dhule","Gadchiroli","Gondia","Hingoli","Jalgaon","Jalna","Kolhapur","Latur","Mumbai City","Mumbai Suburban","Nagpur","Nanded","Nandurbar","Nashik","Osmanabad","Palghar","Parbhani","Pune","Raigad","Ratnagiri","Sangli","Satara","Sindhudurg","Solapur","Thane","Wardha","Washim","Yavatmal"],"Manipur":["Bishnupur","Chandel","Churachandpur","Imphal East","Imphal West","Jiribam","Kakching","Kamjong","Kangpokpi","Noney","Pherzawl","Senapati","Tamenglong","Tengnoupal","Thoubal","Ukhrul"],"Meghalaya":["East Garo Hills","East Jaintia Hills","East Khasi Hills","North Garo Hills","Ri Bhoi","South Garo Hills","South West Garo Hills ","South West Khasi Hills","West Garo Hills","West Jaintia Hills","West Khasi Hills"],"Mizoram":["Aizawl","Champhai","Kolasib","Lawngtlai","Lunglei","Mamit","Saiha","Serchhip"],"Nagaland":["Dimapur","Kiphire","Kohima","Longleng","Mokokchung","Mon","Peren","Phek","Tuensang","Wokha","Zunheboto"],"Odisha":["Angul","Balangir","Balasore","Bargarh","Bhadrak","Boudh","Cuttack","Deogarh","Dhenkanal","Gajapati","Ganjam","Jagatsinghapur","Jajpur","Jharsuguda","Kalahandi","Kandhamal","Kendrapara","Kendujhar (Keonjhar)","Khordha","Koraput","Malkangiri","Mayurbhanj","Nabarangpur","Nayagarh","Nuapada","Puri","Rayagada","Sambalpur","Sonepur","Sundargarh"],"Puducherry (UT)":["Karaikal","Mahe","Pondicherry","Yanam"],"Punjab":["Amritsar","Barnala","Bathinda","Faridkot","Fatehgarh Sahib","Fazilka","Ferozepur","Gurdaspur","Hoshiarpur","Jalandhar","Kapurthala","Ludhiana","Mansa","Moga","Muktsar","Nawanshahr (Shahid Bhagat Singh Nagar)","Pathankot","Patiala","Rupnagar","Sahibzada Ajit Singh Nagar (Mohali)","Sangrur","Tarn Taran"],"Rajasthan":["Ajmer","Alwar","Banswara","Baran","Barmer","Bharatpur","Bhilwara","Bikaner","Bundi","Chittorgarh","Churu","Dausa","Dholpur","Dungarpur","Hanumangarh","Jaipur","Jaisalmer","Jalore","Jhalawar","Jhunjhunu","Jodhpur","Karauli","Kota","Nagaur","Pali","Pratapgarh","Rajsamand","Sawai Madhopur","Sikar","Sirohi","Sri Ganganagar","Tonk","Udaipur"],"Sikkim":["East Sikkim","North Sikkim","South Sikkim","West Sikkim"],"Tamil Nadu":["Ariyalur","Chennai","Coimbatore","Cuddalore","Dharmapuri","Dindigul","Erode","Kanchipuram","Kanyakumari","Karur","Krishnagiri","Madurai","Nagapattinam","Namakkal","Nilgiris","Perambalur","Pudukkottai","Ramanathapuram","Salem","Sivaganga","Thanjavur","Theni","Thoothukudi (Tuticorin)","Tiruchirappalli","Tirunelveli","Tiruppur","Tiruvallur","Tiruvannamalai","Tiruvarur","Vellore","Viluppuram","Virudhunagar"],"Telangana":["Adilabad","Bhadradri Kothagudem","Hyderabad","Jagtial","Jangaon","Jayashankar Bhoopalpally","Jogulamba Gadwal","Kamareddy","Karimnagar","Khammam","Komaram Bheem Asifabad","Mahabubabad","Mahabubnagar","Mancherial","Medak","Medchal","Nagarkurnool","Nalgonda","Nirmal","Nizamabad","Peddapalli","Rajanna Sircilla","Rangareddy","Sangareddy","Siddipet","Suryapet","Vikarabad","Wanaparthy","Warangal (Rural)","Warangal (Urban)","Yadadri Bhuvanagiri"],"Tripura":["Dhalai","Gomati","Khowai","North Tripura","Sepahijala","South Tripura","Unakoti","West Tripura"],"Uttarakhand":["Almora","Bageshwar","Chamoli","Champawat","Dehradun","Haridwar","Nainital","Pauri Garhwal","Pithoragarh","Rudraprayag","Tehri Garhwal","Udham Singh Nagar","Uttarkashi"],"Uttar Pradesh":["Agra","Aligarh","Allahabad","Ambedkar Nagar","Amethi (Chatrapati Sahuji Mahraj Nagar)","Amroha (J.P. Nagar)","Auraiya","Azamgarh","Baghpat","Bahraich","Ballia","Balrampur","Banda","Barabanki","Bareilly","Basti","Bhadohi","Bijnor","Budaun","Bulandshahr","Chandauli","Chitrakoot","Deoria","Etah","Etawah","Faizabad","Farrukhabad","Fatehpur","Firozabad","Gautam Buddha Nagar","Ghaziabad","Ghazipur","Gonda","Gorakhpur","Hamirpur","Hapur (Panchsheel Nagar)","Hardoi","Hathras","Jalaun","Jaunpur","Jhansi","Kannauj","Kanpur Dehat","Kanpur Nagar","Kanshiram Nagar (Kasganj)","Kaushambi","Kushinagar (Padrauna)","Lakhimpur - Kheri","Lalitpur","Lucknow","Maharajganj","Mahoba","Mainpuri","Mathura","Mau","Meerut","Mirzapur","Moradabad","Muzaffarnagar","Pilibhit","Pratapgarh","RaeBareli","Rampur","Saharanpur","Sambhal (Bhim Nagar)","Sant Kabir Nagar","Shahjahanpur","Shamali (Prabuddh Nagar)","Shravasti","Siddharth Nagar","Sitapur","Sonbhadra","Sultanpur","Unnao","Varanasi"],"West Bengal":["Alipurduar","Bankura","Birbhum","Burdwan (Bardhaman)","Cooch Behar","Dakshin Dinajpur (South Dinajpur)","Darjeeling","Hooghly","Howrah","Jalpaiguri","Kalimpong","Kolkata","Malda","Murshidabad","Nadia","North 24 Parganas","Paschim Medinipur (West Medinipur)","Purba Medinipur (East Medinipur)","Purulia","South 24 Parganas","Uttar Dinajpur (North Dinajpur)"]};
+    //alert(cityArr[jsVal]);
+    // jQuery.each( cityArr, function( i, val ) {
+    //    cityArr[i]="{ value: "+val+", label: "+val+" },"
+    
+    // });
+    //alert(cityArr[0]);
+    consigneeCity.clearStore();
+    consigneeCity.setValue(consigneecityArr[jsVal]);
+     
+    });
+    
+    
+    
+    
+       var multipleCancel1 = new Choices('#consignorstate', {
+         
+          choices: [
+        { value: 'Andaman and Nicobar Islands', label: 'Andaman and Nicobar Islands' },
+        { value: 'Andhra Pradesh', label: 'Andhra Pradesh'},
+        { value: 'Arunachal Pradesh', label: 'Arunachal Pradesh'},
+    
+        { value: 'Assam', label: 'Assam'},
+        { value: 'Chandigarh', label: 'Chandigarh'},
+        { value: 'Chhattisgarh', label: 'Chhattisgarh' },
+        { value: 'Dadra and Nagar Haveli', label: 'Dadra and Nagar Haveli'},
+        { value: 'Daman and Diu', label: 'Daman and Diu'},
+        { value: 'Delhi', label: 'Delhi' },
+        { value: 'Goa', label: 'Goa'},
+        { value: 'Gujarat', label: 'Gujarat'},
+        { value: 'Haryana', label: 'Haryana' },
+        { value: 'Himachal Pradesh', label: 'Himachal Pradesh'},
+        { value: 'Jammu and Kashmir', label: 'Jammu and Kashmir'},
+        { value: 'Jharkhand', label: 'Jharkhand' },
+        { value: 'Karnataka', label: 'Karnataka'},
+        { value: 'Kerala', label: 'Kerala'},
+        { value: 'Ladakh', label: 'Ladakh' },
+        { value: 'Lakshadweep', label: 'Lakshadweep'},
+        { value: 'Madhya Pradesh', label: 'Madhya Pradesh'},
+        { value: 'Maharashtra', label: 'Maharashtra' },
+        { value: 'Manipur', label: 'Manipur'},
+        { value: 'Meghalaya', label: 'Meghalaya'},
+        { value: 'Mizoram', label: 'Mizoram' },
+        { value: 'Nagaland', label: 'Nagaland'},
+        { value: 'Odisha', label: 'Odisha'},
+        { value: 'Puducherry', label: 'Puducherry' },
+        { value: 'Punjab', label: 'Punjab'},
+        { value: 'Rajasthan', label: 'Rajasthan'},
+        { value: 'Sikkim', label: 'Sikkim' },
+        { value: 'Tamil Nadu', label: 'Tamil Nadu'},
+        { value: 'Telangana', label: 'Telangana'},
+        { value: 'Tripura', label: 'Tripura' },
+        { value: 'Uttar Pradesh', label: 'Uttar Pradesh'},
+        { value: 'Uttarakhand', label: 'Uttarakhand'},
+        { value: 'West Bengal', label: 'West Bengal' },
+      
+      ],
+    removeItemButton: true,
+    maxItemCount:38,
+    
+     
+    
+    });
+    
+    
+    var multipleCancelButton = new Choices('#consigneestate', {
+        choices: [
+        { value: 'Andaman and Nicobar Islands', label: 'Andaman and Nicobar Islands' },
+        { value: 'Andhra Pradesh', label: 'Andhra Pradesh'},
+        { value: 'Arunachal Pradesh', label: 'Arunachal Pradesh'},
+         { value: 'Assam', label: 'Assam' },
+        { value: 'Assam', label: 'Assam'},
+        { value: 'Chandigarh', label: 'Chandigarh'},
+        { value: 'Chhattisgarh', label: 'Chhattisgarh' },
+        { value: 'Dadra and Nagar Haveli', label: 'Dadra and Nagar Haveli'},
+        { value: 'Daman and Diu', label: 'Daman and Diu'},
+        { value: 'Delhi', label: 'Delhi' },
+        { value: 'Goa', label: 'Goa'},
+        { value: 'Gujarat', label: 'Gujarat'},
+        { value: 'Haryana', label: 'Haryana' },
+        { value: 'Himachal Pradesh', label: 'Himachal Pradesh'},
+        { value: 'Jammu and Kashmir', label: 'Jammu and Kashmir'},
+        { value: 'Jharkhand', label: 'Jharkhand' },
+        { value: 'Karnataka', label: 'Karnataka'},
+        { value: 'Kerala', label: 'Kerala'},
+        { value: 'Ladakh', label: 'Ladakh' },
+        { value: 'Lakshadweep', label: 'Lakshadweep'},
+        { value: 'Madhya Pradesh', label: 'Madhya Pradesh'},
+        { value: 'Maharashtra', label: 'Maharashtra' },
+        { value: 'Manipur', label: 'Manipur'},
+        { value: 'Meghalaya', label: 'Meghalaya'},
+        { value: 'Mizoram', label: 'Mizoram' },
+        { value: 'Nagaland', label: 'Nagaland'},
+        { value: 'Odisha', label: 'Odisha'},
+        { value: 'Puducherry', label: 'Puducherry' },
+        { value: 'Punjab', label: 'Punjab'},
+        { value: 'Rajasthan', label: 'Rajasthan'},
+        { value: 'Sikkim', label: 'Sikkim' },
+        { value: 'Tamil Nadu', label: 'Tamil Nadu'},
+        { value: 'Telangana', label: 'Telangana'},
+        { value: 'Tripura', label: 'Tripura' },
+        { value: 'Uttar Pradesh', label: 'Uttar Pradesh'},
+        { value: 'Uttarakhand', label: 'Uttarakhand'},
+        { value: 'West Bengal', label: 'West Bengal' },
+      
+      ],
+    removeItemButton: true,
+    maxItemCount:38,
+    //searchResultLimit:38,
+    //renderChoiceLimit:38,
+    
+    });
+    //multipleCancelButton.getValue(true);
+      //multipleCancelButton.setValue(['NOSQL', 'Hybris', 'Angular']);
+    });
+    
+    
+        var js_arr=[{"label": "RJ51GA-0763-2110", "value": "2110"}, {"label": "RJ01GB-2397-2111", "value": "2111"}, {"label": "RJ01GC-2651-2112", "value": "2112"}, {"label": "RJ01GB-4470-2113", "value": "2113"}, {"label": "GJ12Z2303-2114", "value": "2114"}, {"label": "RJ01GB7352-2115", "value": "2115"}, {"label": "RJ01GB9705-2116", "value": "2116"}, {"label": "RJ01BW-2117", "value": "2117"}, {"label": "RJ21GA4997-2118", "value": "2118"}, {"label": "RJ01GB-2519-2101", "value": "2101"}, {"label": "RJ01GC-1275-2102", "value": "2102"}, {"label": "HR68B-7763-2103", "value": "2103"}, {"label": "RJ01GC3451-2104", "value": "2104"}, {"label": "RJ01GB-4883-2105", "value": "2105"}, {"label": "RJ01GC-2476-2106", "value": "2106"}, {"label": "RJ01GC-2534-2107", "value": "2107"}, {"label": "GJ12BZ-1965-2108", "value": "2108"}, {"label": "RJ01GB-7107-2109", "value": "2109"}, {"label": "MH14HG8944-2119", "value": "2119"}, {"label": "RJ06GC2386-2120", "value": "2120"}, {"label": "RJ19GD7184-2121", "value": "2121"}, {"label": "DN09P-9995-2122", "value": "2122"}, {"label": "RJ21GA4997-2123", "value": "2123"}, {"label": "HR63C0673-2124", "value": "2124"}, {"label": "RJ19GD7184-2125", "value": "2125"}, {"label": "RJ21GA4997-2126", "value": "2126"}, {"label": "HR47E-4748-2127", "value": "2127"}, {"label": "RJ21GA4997-2128", "value": "2128"}, {"label": "RJ19GD7184-2129", "value": "2129"}, {"label": "MH46BU-0578-2130", "value": "2130"}, {"label": "DL1M-1565 -2131", "value": "2131"}, {"label": "RJ19GF1092-2132", "value": "2132"}, {"label": "RJ19GH2672-2133", "value": "2133"}, {"label": "HR73A7461-2134", "value": "2134"}, {"label": "RJ36GA5156-2135", "value": "2135"}, {"label": "RJ09GB2515-2136", "value": "2136"}, {"label": "RJ01GB7440-2137", "value": "2137"}, {"label": "RJ19GE1497-2138", "value": "2138"}, {"label": "UP82T2863-2139", "value": "2139"}, {"label": "MH11CH4211-2140", "value": "2140"}, {"label": "PB07BR4403-2141", "value": "2141"}, {"label": "HR69B9859-2142", "value": "2142"}, {"label": "PB08DS7250 -2143", "value": "2143"}, {"label": "DN09N-9444-2144", "value": "2144"}, {"label": "PB10HN-2298-2145", "value": "2145"}, {"label": "HR38X9374 -2146", "value": "2146"}, {"label": "HR74A5301-2147", "value": "2147"}, {"label": "MH40BG0143-2148", "value": "2148"}, {"label": "HR37E6854-2149", "value": "2149"}, {"label": "UK073A8099-2150", "value": "2150"}, {"label": "UP78FR4891-2151", "value": "2151"}, {"label": "MH04JK4778 -2152", "value": "2152"}, {"label": "HR63D1243-2153", "value": "2153"}, {"label": "HR 63 E 8781-2154", "value": "2154"}, {"label": "HR 63 E 8781-2155", "value": "2155"}, {"label": "UP-70HT-9918-2156", "value": "2156"}, {"label": "PB23M-9805-2157", "value": "2157"}, {"label": "HR63C9042-2158", "value": "2158"}, {"label": "PB10GW8724-2159", "value": "2159"}, {"label": "HR844286-2160", "value": "2160"}, {"label": "PB07BX9467-2161", "value": "2161"}, {"label": "RJ01GA-8475-2162", "value": "2162"}, {"label": "RJ01GC-2197-2163", "value": "2163"}, {"label": "PB13BD5619-2164", "value": "2164"}, {"label": "PB11CM-4722-2165", "value": "2165"}, {"label": "DL1LAB6074-2166", "value": "2166"}, {"label": "RJ06GC4150-2167", "value": "2167"}, {"label": "PB23T-0517-2168", "value": "2168"}, {"label": "GJ08AU6373-2169", "value": "2169"}, {"label": "UP84AT1581-2170", "value": "2170"}, {"label": "DL1MA9690-2171", "value": "2171"}, {"label": "HR47C-9076-2172", "value": "2172"}, {"label": "JH02BB3051-2173", "value": "2173"}, {"label": "HR39D-7145-2174", "value": "2174"}, {"label": "GJ12BW-3492-2175", "value": "2175"}, {"label": "GJ12BT-1097-2176", "value": "2176"}, {"label": "RJ01GB-2397-2177", "value": "2177"}, {"label": "RJ01GB-4635-2178", "value": "2178"}, {"label": "RJ01GB-0911-2179", "value": "2179"}, {"label": "RJ46GA-3953-2180", "value": "2180"}, {"label": "RJ01GB-2786-2181", "value": "2181"}, {"label": "RJ01GA-7423-2182", "value": "2182"}, {"label": "HR55AJ-3103-2183", "value": "2183"}, {"label": "GJ12BZ-1965-2184", "value": "2184"}, {"label": "GJ12BT-7059-2185", "value": "2185"}, {"label": "GJ12BW-7576-2186", "value": "2186"}, {"label": "GJ12BX-7222-2187", "value": "2187"}, {"label": "GJ12BZ-9495-2188", "value": "2188"}, {"label": "RJ01GB-4169-2189", "value": "2189"}, {"label": "RJ01GC-1915-2190", "value": "2190"}, {"label": "RJ01GB-8005-2191", "value": "2191"}, {"label": "HR74B1597-2192", "value": "2192"}, {"label": "HR74B1597-2193", "value": "2193"}, {"label": "RJ01GC-7807-2194", "value": "2194"}, {"label": "RJ01GB-3455-2195", "value": "2195"}, {"label": "GJ12AZ-9039-2196", "value": "2196"}, {"label": "GJ12BT-0336-2197", "value": "2197"}, {"label": "RJ14GG-4148-2198", "value": "2198"}, {"label": "RJ01GC-2959-2199", "value": "2199"}, {"label": "RJ01GB-7275-2200", "value": "2200"}, {"label": "RJ01GB-6219-2201", "value": "2201"}, {"label": "UP14ET8257-2202", "value": "2202"}, {"label": "UP14ET8257-2203", "value": "2203"}, {"label": "UP14ET8257-2204", "value": "2204"}, {"label": "UP14ET8257-2205", "value": "2205"}, {"label": "TN02BF8771-2206", "value": "2206"}, {"label": "TN02BF8771-2207", "value": "2207"}, {"label": "TN02BF8771-2208", "value": "2208"}, {"label": "TN02BF8771-2209", "value": "2209"}, {"label": "HR63E0617-2210", "value": "2210"}, {"label": "HR63E0617-2211", "value": "2211"}, {"label": "HR63E0617-2212", "value": "2212"}, {"label": "UP14ET8257-2213", "value": "2213"}, {"label": "UP14ET8257-2214", "value": "2214"}, {"label": "HR46D6881-2215", "value": "2215"}, {"label": "DD01F-9971-2216", "value": "2216"}, {"label": "DL1LAG-2709-2217", "value": "2217"}, {"label": "UP84T7240-2218", "value": "2218"}, {"label": "MH10CR7699 -2219", "value": "2219"}, {"label": "HR84-5121 -2220", "value": "2220"}, {"label": "DL01LAG8285-2221", "value": "2221"}, {"label": "HR38AA4644-2222", "value": "2222"}, {"label": "HR30AA4644-2223", "value": "2223"}, {"label": "KA52B3895-2224", "value": "2224"}, {"label": " UP17AT6820-2225", "value": "2225"}, {"label": "RJ27GC-2786-2226", "value": "2226"}, {"label": "PB23T-5045-2227", "value": "2227"}, {"label": "PB23M-9805-2228", "value": "2228"}, {"label": "MH14EM5090-2229", "value": "2229"}, {"label": "HR47D-5248-2230", "value": "2230"}, {"label": "HR47D-5248-2231", "value": "2231"}, {"label": "HR47D5248-2232", "value": "2232"}, {"label": "PB07AS7583 -2233", "value": "2233"}, {"label": "HR38T1686-2234", "value": "2234"}, {"label": "GJ15AT1315-2235", "value": "2235"}, {"label": "HR38X1143-2236", "value": "2236"}, {"label": "HR61D4860-2237", "value": "2237"}, {"label": "HR45C4438-2238", "value": "2238"}, {"label": "UP16DT-9387-2239", "value": "2239"}, {"label": "UP16DT9387-2240", "value": "2240"}, {"label": "UP16DT9387 -2241", "value": "2241"}, {"label": "KA52A7211-2242", "value": "2242"}, {"label": " HR74B5797-2243", "value": "2243"}, {"label": "RJ49GA1521-2244", "value": "2244"}, {"label": "RJ49GA1522-2245", "value": "2245"}, {"label": "NL01L 0565  -2246", "value": "2246"}, {"label": "MP13GA9348-2247", "value": "2247"}, {"label": "UP53DT1677-2248", "value": "2248"}, {"label": "RJ20GC 3595 -2249", "value": "2249"}, {"label": "UP14HT7489 -2250", "value": "2250"}, {"label": "HR46C9086-2251", "value": "2251"}, {"label": "HR69B-7314-2252", "value": "2252"}, {"label": "UP14KT0194 -2253", "value": "2253"}, {"label": "MH12TV1722-2255", "value": "2255"}, {"label": "UP14KT0194-2256", "value": "2256"}, {"label": "RJ01GB-8175-2257", "value": "2257"}, {"label": "RJ01GB-7108-2258", "value": "2258"}, {"label": "RJ01GC-1275-2259", "value": "2259"}, {"label": "UP14KT0194-2260", "value": "2260"}, {"label": "MH24AB5967-2254", "value": "2254"}, {"label": "RJ01GB-9705-2261", "value": "2261"}, {"label": "AP37X-6172-2262", "value": "2262"}, {"label": "GJ01JT-5821-2263", "value": "2263"}, {"label": "RJ27GB8918-2264", "value": "2264"}, {"label": "UP30AT1053-2265", "value": "2265"}, {"label": "TS12UC-1247-2266", "value": "2266"}, {"label": "DD03L9711-2267", "value": "2267"}, {"label": "RJ14GJ4978-2268", "value": "2268"}, {"label": "CH 01 TA 6468-2269", "value": "2269"}, {"label": "CG07CH0218-2270", "value": "2270"}, {"label": "PB03BJ1224-2271", "value": "2271"}, {"label": "GJ15YY9873 -2272", "value": "2272"}, {"label": "RJ01GA6183-2273", "value": "2273"}, {"label": "RJ01GB7054-2274", "value": "2274"}, {"label": "RJ49GA-1121-2275", "value": "2275"}, {"label": "RJ01GB-4883-2276", "value": "2276"}, {"label": "HR39E0378-2277", "value": "2277"}, {"label": "MH12KP0956 -2278", "value": "2278"}, {"label": "HR39E-0378-2279", "value": "2279"}, {"label": "UP15CT1616-2280", "value": "2280"}, {"label": "PB11BU9365 -2281", "value": "2281"}, {"label": "GJ12BY7360-2282", "value": "2282"}, {"label": "MH14EM5090-2283", "value": "2283"}, {"label": "PB10GW8724 -2284", "value": "2284"}, {"label": "RJ49GA-1521-2285", "value": "2285"}, {"label": "NL01AE8339-2286", "value": "2286"}, {"label": "PB10HG-9867-2287", "value": "2287"}, {"label": "MH12HD1549 -2288", "value": "2288"}, {"label": "RJ49GA2016-2289", "value": "2289"}, {"label": "RJ01GB-5424-2290", "value": "2290"}, {"label": "GJ12BY9558-2291", "value": "2291"}, {"label": "HR38Z0401-2292", "value": "2292"}, {"label": "MH14GU0718 -2293", "value": "2293"}, {"label": "TN02BF8771-2294", "value": "2294"}, {"label": "TN02BF8771-2295", "value": "2295"}, {"label": "TN02BF8771-2296", "value": "2296"}, {"label": "UP12T-5600-2297", "value": "2297"}, {"label": "UP12BT-5600-2298", "value": "2298"}, {"label": "HR39E0378-2299", "value": "2299"}, {"label": "GJ12BY-8391-2300", "value": "2300"}, {"label": "GJ12BY-3862-2301", "value": "2301"}, {"label": "RJ09GB4377-2302", "value": "2302"}, {"label": "MH04FU1390-2303", "value": "2303"}, {"label": "HR61D-1267-2304", "value": "2304"}, {"label": "HR84-4286-2305", "value": "2305"}, {"label": "MH48CB3882-2306", "value": "2306"}, {"label": "UP16HT8541-2307", "value": "2307"}, {"label": "DD01F9874-2308", "value": "2308"}, {"label": "MH12HD1549-2309", "value": "2309"}, {"label": "RJ49GA2003-2310", "value": "2310"}, {"label": "RJ19GB7775-2311", "value": "2311"}, {"label": " RJ19GB7775-2312", "value": "2312"}, {"label": "RJ19GB7775-2313", "value": "2313"}, {"label": "RJ19GB7775-2314", "value": "2314"}, {"label": "RJ19GB7775-2315", "value": "2315"}, {"label": "RJ19GB7775-2316", "value": "2316"}, {"label": "RJ19GB7775-2317", "value": "2317"}, {"label": "HR45D2846 -2318", "value": "2318"}, {"label": "RJ01GC-2379-2319", "value": "2319"}, {"label": "PB10FF2416-2320", "value": "2320"}, {"label": "DD01J9804-2321", "value": "2321"}, {"label": "MH14BJ-2013-2322", "value": "2322"}, {"label": "MH04LE-1416-2323", "value": "2323"}, {"label": "RJ49GA1521-2324", "value": "2324"}, {"label": "RJ02GB6529-2325", "value": "2325"}, {"label": "HR38U0949-2326", "value": "2326"}, {"label": "MH04KU8476-2327", "value": "2327"}, {"label": "HR69D0625 -2328", "value": "2328"}, {"label": "CH01TB-0540-2329", "value": "2329"}, {"label": "RJ02GC1777-2330", "value": "2330"}, {"label": "RJ02GC-1778-2331", "value": "2331"}, {"label": "NL01AF-3901-2332", "value": "2332"}, {"label": "RJ01GB-4765-2333", "value": "2333"}, {"label": "RJ01GC-6206-2334", "value": "2334"}, {"label": "RJ01GC-1795-2335", "value": "2335"}, {"label": "NL01AG-1048-2336", "value": "2336"}, {"label": "HR39E0378-2337", "value": "2337"}, {"label": "HR39E0378-2338", "value": "2338"}, {"label": "MP07GA-8293-2339", "value": "2339"}, {"label": "RJ02GC1278-2340", "value": "2340"}, {"label": "MP07GA-8293-2341", "value": "2341"}, {"label": "HR38U0949-2342", "value": "2342"}, {"label": "RJ19GG7398-2343", "value": "2343"}, {"label": "HR73A7108 -2344", "value": "2344"}, {"label": "HR74B8517-2345", "value": "2345"}, {"label": "MH23W5677-2346", "value": "2346"}, {"label": "HR38U-0099-2347", "value": "2347"}, {"label": "HR38V-5886-2348", "value": "2348"}, {"label": "UP51AT-4807-2349", "value": "2349"}, {"label": "RJ01GC-2959-2350", "value": "2350"}, {"label": "RJ32GB1787-2351", "value": "2351"}, {"label": "RJ01GC-8271-2352", "value": "2352"}, {"label": "RJ01GB-5399-2353", "value": "2353"}, {"label": "RJ14GL4944-2354", "value": "2354"}, {"label": "RJ14GL4944-2355", "value": "2355"}, {"label": "GJ27TT8402-2356", "value": "2356"}, {"label": "GJ27TT8402-2357", "value": "2357"}, {"label": "UP16BT9930-2358", "value": "2358"}, {"label": "UP16BT9930 -2359", "value": "2359"}, {"label": "UP16BT9930-2360", "value": "2360"}, {"label": "UP16BT9930-2361", "value": "2361"}, {"label": "HR38Y-4500-2362", "value": "2362"}, {"label": "HR63B 5522-2363", "value": "2363"}, {"label": "PB46M5036-2364", "value": "2364"}, {"label": "RJ36GB-2989-2365", "value": "2365"}, {"label": "RJ32GC-3225-2366", "value": "2366"}, {"label": "GJ12BY5989-2367", "value": "2367"}, {"label": "UP86T8969-2368", "value": "2368"}, {"label": "GJ27TT-9536-2369", "value": "2369"}, {"label": "DN09G9073-2370", "value": "2370"}, {"label": "UP83BT8613-2371", "value": "2371"}, {"label": "HR68C0688-2372", "value": "2372"}, {"label": "GJ12BX-8424-2373", "value": "2373"}, {"label": "GJ12BZ-8077-2374", "value": "2374"}, {"label": "RJ01GC-1424-2375", "value": "2375"}, {"label": "RJ09GC-0602-2376", "value": "2376"}, {"label": "RJ01GC-2477-2377", "value": "2377"}, {"label": "GJ12BY-8077-2378", "value": "2378"}, {"label": "GJ12BZ-7188-2379", "value": "2379"}, {"label": "GJ12BY-0685-2380", "value": "2380"}, {"label": "MH41G5144 -2381", "value": "2381"}, {"label": "MH41G5144 -2382", "value": "2382"}, {"label": "MH11AL-5517-2383", "value": "2383"}, {"label": "DL1GC2104-2384", "value": "2384"}, {"label": "DL1GC2104-2385", "value": "2385"}, {"label": "MH04FT-2514-2386", "value": "2386"}, {"label": "CG07CH0218-2387", "value": "2387"}, {"label": " UK14CA4713-2388", "value": "2388"}, {"label": "RJ19GC6977-2389", "value": "2389"}, {"label": "RJ04GB0117-2390", "value": "2390"}, {"label": "HR38AD-0273-2391", "value": "2391"}, {"label": "RJ26GA-6403-2392", "value": "2392"}, {"label": "RJ01GC-6097-2393", "value": "2393"}, {"label": "HR55AN-3004-2394", "value": "2394"}, {"label": "RJ01GC-2126-2395", "value": "2395"}, {"label": "RJ24GA-4971-2396", "value": "2396"}, {"label": "RJ37GA7057-2397", "value": "2397"}, {"label": "GJ23AT9917-2398", "value": "2398"}, {"label": "RJ01GC8289-2399", "value": "2399"}, {"label": "MH14KA6925-2400", "value": "2400"}, {"label": "HR55AL1787-2401", "value": "2401"}, {"label": "RJ52GA0824-2402", "value": "2402"}, {"label": "CH01TB1317 -2403", "value": "2403"}, {"label": "GJ27X8105-2404", "value": "2404"}, {"label": "TN18BJ-8620-2405", "value": "2405"}, {"label": "HR74A-5829-2406", "value": "2406"}, {"label": "HR55AN3004-2407", "value": "2407"}, {"label": "PB11CP-0217-2408", "value": "2408"}, {"label": "PB03BC-3768-2409", "value": "2409"}, {"label": "HR63C0673-2410", "value": "2410"}, {"label": "UP16BT9930-2411", "value": "2411"}, {"label": "UP16BT9930-2412", "value": "2412"}, {"label": "UP16BT9930-2413", "value": "2413"}, {"label": "HR63C3222-2414", "value": "2414"}, {"label": "HR63C3222 -2415", "value": "2415"}, {"label": "MH14EM-5090-2416", "value": "2416"}, {"label": "JK21B8356-2417", "value": "2417"}, {"label": "JK14D3927-2418", "value": "2418"}, {"label": "UP76K9888-2419", "value": "2419"}, {"label": "HR58B9331-2420", "value": "2420"}, {"label": "NL01AF5920-2421", "value": "2421"}, {"label": "NL01AF6387-2422", "value": "2422"}, {"label": "NL01AF5922-2423", "value": "2423"}, {"label": "PB11CR8737-2424", "value": "2424"}, {"label": "PB10FV3445-2425", "value": "2425"}, {"label": "JK08G1875 -2426", "value": "2426"}, {"label": "RJ19GB8434-2427", "value": "2427"}, {"label": "UP20AT9206 -2428", "value": "2428"}, {"label": "UP84AT1874-2429", "value": "2429"}, {"label": "RJ11GC2819-2430", "value": "2430"}, {"label": "RJ19GB8434-2431", "value": "2431"}, {"label": "MH12KP-4566-2432", "value": "2432"}, {"label": "HR38AD4160-2433", "value": "2433"}, {"label": "HR45C3254 -2434", "value": "2434"}, {"label": "PB06AZ9048-2435", "value": "2435"}, {"label": "PB10FF1103-2436", "value": "2436"}, {"label": "RJ19GC4123-2437", "value": "2437"}, {"label": "UP14KT-3001-2438", "value": "2438"}, {"label": "RJ19GC4123-2439", "value": "2439"}, {"label": "UP14JT6259-2440", "value": "2440"}, {"label": "GJ12BZ-7188-2441", "value": "2441"}, {"label": "PB07CA9362-2442", "value": "2442"}, {"label": "RJ14GL9905-2443", "value": "2443"}, {"label": "RJ19GC4123-2444", "value": "2444"}, {"label": "UP84AT2008-2445", "value": "2445"}, {"label": "UP84AT1990-2446", "value": "2446"}, {"label": "MH19CY7412-2447", "value": "2447"}, {"label": "MH19CY7412-2448", "value": "2448"}, {"label": "RJ19GF1092-2449", "value": "2449"}, {"label": "RJ19GF1092-2450", "value": "2450"}, {"label": "RJ19GF1092-2451", "value": "2451"}, {"label": "RJ19GF1092-2452", "value": "2452"}, {"label": "RJ19GF1092-2453", "value": "2453"}, {"label": "RJ14GP1672-2454", "value": "2454"}, {"label": "HR38W3476-2455", "value": "2455"}, {"label": "HR73A0333-2456", "value": "2456"}, {"label": "HR38R0459-2457", "value": "2457"}, {"label": "GJ12BT-9279-2458", "value": "2458"}, {"label": "GJ12BW-8961-2459", "value": "2459"}, {"label": "MP09HH7571-2460", "value": "2460"}, {"label": "GJ25T9796-2461", "value": "2461"}, {"label": "HR38V3644-2462", "value": "2462"}, {"label": "MH48CB3332-2463", "value": "2463"}, {"label": "RJ19GG3521-2464", "value": "2464"}, {"label": "DL1MA-4672-2465", "value": "2465"}, {"label": "RJ07GB9561-2466", "value": "2466"}, {"label": "HR45B8634-2467", "value": "2467"}, {"label": "RJ32GB-6089-2468", "value": "2468"}, {"label": "GJ08AU-8678-2469", "value": "2469"}, {"label": "GJ08AU8678-2470", "value": "2470"}, {"label": "GJ08AU8678-2471", "value": "2471"}, {"label": "GJ08AU8678-2472", "value": "2472"}, {"label": "GJ08AU8678-2473", "value": "2473"}, {"label": "GJ08AU8678-2474", "value": "2474"}, {"label": "-2475", "value": "2475"}, {"label": "RJ01GB-5399-2476", "value": "2476"}, {"label": "MH04FJ7828-2477", "value": "2477"}, {"label": "GJ08AU8678-2478", "value": "2478"}, {"label": "GJ08AU8678-2479", "value": "2479"}, {"label": "GJ08AU8678-2480", "value": "2480"}, {"label": "RJ19GH2906-2481", "value": "2481"}, {"label": "HR74B2988-2482", "value": "2482"}, {"label": "HR74B2475 -2483", "value": "2483"}, {"label": "UP16CT6277-2484", "value": "2484"}, {"label": "UP80FT5397-2485", "value": "2485"}, {"label": "HR39E0378-2486", "value": "2486"}, {"label": "HR84-4286-2487", "value": "2487"}, {"label": "MH15HH6573 -2488", "value": "2488"}, {"label": "TS16UB1133-2489", "value": "2489"}, {"label": "KA01AE5737 -2490", "value": "2490"}, {"label": "AP13X4654-2491", "value": "2491"}, {"label": "TS16UB1133-2492", "value": "2492"}, {"label": "UP80FT5397-2493", "value": "2493"}, {"label": "TS10UA3011-2494", "value": "2494"}, {"label": "AP29TB7713-2495", "value": "2495"}, {"label": "RJ07GB9561-2496", "value": "2496"}, {"label": "GJ01CV-0129-2497", "value": "2497"}, {"label": "HR46E-0858 -2498", "value": "2498"}, {"label": "RJ07GC1730-2499", "value": "2499"}, {"label": "RJ19GH-2876-2500", "value": "2500"}, {"label": "PB10DM4703-2501", "value": "2501"}, {"label": "HR67C1401 -2502", "value": "2502"}, {"label": "PB03BC3217 -2503", "value": "2503"}, {"label": "HR69D-6625-2504", "value": "2504"}, {"label": "RJ19GF2226-2505", "value": "2505"}, {"label": "PB02EJ6329-2506", "value": "2506"}, {"label": "HR63E-5987-2507", "value": "2507"}, {"label": "HR63E-5987-2508", "value": "2508"}, {"label": "RJ43GA-3923-2509", "value": "2509"}, {"label": "RJ46GA2745-2510", "value": "2510"}, {"label": "RJ04GB8737-2511", "value": "2511"}, {"label": "GJ04AW1610-2512", "value": "2512"}, {"label": "RJ15GA6951-2513", "value": "2513"}, {"label": "RJ19GB7327-2514", "value": "2514"}, {"label": "RJ04GC3238 -2515", "value": "2515"}, {"label": "RJ19GE1455-2516", "value": "2516"}, {"label": "MH46H-5373-2517", "value": "2517"}, {"label": "RJ04GA5969-2518", "value": "2518"}, {"label": "RJ19GG9293-2519", "value": "2519"}, {"label": "RJ19GH4387-2520", "value": "2520"}, {"label": "GJ01DX6746 -2521", "value": "2521"}, {"label": "RJ10GA8362-2522", "value": "2522"}, {"label": "UP16JT7159 -2523", "value": "2523"}, {"label": "GJ-27TD-1348-2524", "value": "2524"}, {"label": "RJ19GC3062-2525", "value": "2525"}, {"label": "UK14CA2776-2526", "value": "2526"}, {"label": "UP78HN2739 -2527", "value": "2527"}, {"label": "RJ37GA1371-2528", "value": "2528"}, {"label": "GJ06AZ7287 -2529", "value": "2529"}, {"label": "GJ06AX0615 -2530", "value": "2530"}, {"label": "GJ03BW9352-2531", "value": "2531"}, {"label": "RJ04GB8737-2532", "value": "2532"}, {"label": "PB13N6591-2533", "value": "2533"}, {"label": "RJ19GC2648-2534", "value": "2534"}, {"label": "GJ03BV0264-2535", "value": "2535"}, {"label": "RJ19GB8233 -2536", "value": "2536"}, {"label": "RJ49GA1057-2537", "value": "2537"}, {"label": "GJ03AT2420-2552", "value": "2552"}, {"label": "GJ03AT2420-2553", "value": "2553"}, {"label": "RJ07GC5479 -2538", "value": "2538"}, {"label": "HR38Z4980-2539", "value": "2539"}, {"label": "PB65BA-0704-2540", "value": "2540"}, {"label": "DL1LX-1725-2541", "value": "2541"}, {"label": "UP72BT-3273-2542", "value": "2542"}, {"label": "HR84-4286-2543", "value": "2543"}, {"label": "PB03W-9670-2544", "value": "2544"}, {"label": "PB03W-9670-2545", "value": "2545"}, {"label": "GJ25U2948 -2546", "value": "2546"}, {"label": "DL01MA9082-2547", "value": "2547"}, {"label": "MP41GA4076-2548", "value": "2548"}, {"label": "PB10HY1459-2549", "value": "2549"}, {"label": "RJ11GB8620 -2550", "value": "2550"}, {"label": "UP13CT3950 -2551", "value": "2551"}, {"label": "MH18GB7882-2554", "value": "2554"}, {"label": "DL1M5824-2555", "value": "2555"}, {"label": "DL1M5824-2556", "value": "2556"}, {"label": "DL1M5824-2557", "value": "2557"}, {"label": "DL1M5824-2558", "value": "2558"}, {"label": "UP14GT-0436-2559", "value": "2559"}, {"label": "RJ36GA4661-2560", "value": "2560"}, {"label": "GJ01DV-0118-2561", "value": "2561"}, {"label": "MH18BG7682-2562", "value": "2562"}, {"label": "MH18BG7682-2563", "value": "2563"}, {"label": "MH18BG7682-2564", "value": "2564"}, {"label": "UK14CA 3796-2565", "value": "2565"}, {"label": "DN09H9588 -2566", "value": "2566"}, {"label": "HP12J-0350-2567", "value": "2567"}, {"label": "GJ23AT3564-2568", "value": "2568"}, {"label": "GJ23AT3564-2569", "value": "2569"}, {"label": "GJ23AT3564-2570", "value": "2570"}, {"label": "GJ23AT3564-2571", "value": "2571"}, {"label": "PB11BN5725-2572", "value": "2572"}, {"label": "PB11BA3325-2573", "value": "2573"}, {"label": "PB11BK4125-2574", "value": "2574"}, {"label": "PB11CL7925-2575", "value": "2575"}, {"label": "UP14GT8769-2576", "value": "2576"}, {"label": "UP14GT8769-2577", "value": "2577"}, {"label": "DN09R9365-2578", "value": "2578"}, {"label": "GJ16AV3497-2579", "value": "2579"}, {"label": "PB10DM4703-2580", "value": "2580"}, {"label": "UP17AT9949-2581", "value": "2581"}, {"label": "PB10HY1459-2582", "value": "2582"}, {"label": "PB13BN6793-2583", "value": "2583"}, {"label": "UP17AT9949-2584", "value": "2584"}, {"label": "UP17AT9949-2585", "value": "2585"}, {"label": "UP17AT9949-2586", "value": "2586"}, {"label": "UP17AT9949-2587", "value": "2587"}, {"label": "UP17AT9949-2588", "value": "2588"}, {"label": "UP17AT9949-2589", "value": "2589"}, {"label": "UP17AT9949-2590", "value": "2590"}, {"label": "UP17AT9949-2591", "value": "2591"}, {"label": "UP17AT9949-2592", "value": "2592"}, {"label": "RJ40GA6099-2593", "value": "2593"}, {"label": "HR38W4154-2594", "value": "2594"}, {"label": "UP17AT9949-2595", "value": "2595"}, {"label": "UP17AT9949-2596", "value": "2596"}, {"label": "UP17AT9949-2597", "value": "2597"}, {"label": "UP17AT9949-2598", "value": "2598"}, {"label": "UP17AT9949-2599", "value": "2599"}, {"label": "UP17AT9949-2600", "value": "2600"}, {"label": "MP13GB3245-2601", "value": "2601"}, {"label": "PB06AZ4949-2602", "value": "2602"}, {"label": "PB08DS9949-2603", "value": "2603"}, {"label": "PB10 HJ 5875-2604", "value": "2604"}, {"label": "CG07AZ9529 -2605", "value": "2605"}, {"label": "GJ27X3752-2606", "value": "2606"}, {"label": "RJ06GC8301-2607", "value": "2607"}, {"label": "PB07BU6076-2608", "value": "2608"}, {"label": "PB10HG9867-2609", "value": "2609"}, {"label": "GJ06BT0762-2610", "value": "2610"}, {"label": "GJ06BT0762-2611", "value": "2611"}, {"label": "UP19T4246-2612", "value": "2612"}, {"label": "MH13DQ3489-2613", "value": "2613"}, {"label": "RJ06GC8301-2614", "value": "2614"}, {"label": "HR61C7881-2615", "value": "2615"}, {"label": "HR61 C7881-2617", "value": "2617"}, {"label": "HR61C7881-2616", "value": "2616"}, {"label": "HR61C7881-2618", "value": "2618"}, {"label": "HR61 C7881-2619", "value": "2619"}, {"label": "GJ23AT3350-2620", "value": "2620"}, {"label": "RJ47GA1897-2621", "value": "2621"}, {"label": "MP33H2230-2622", "value": "2622"}, {"label": "-2623", "value": "2623"}, {"label": "MP19GA3381-2624", "value": "2624"}, {"label": "CG10BF5305-2625", "value": "2625"}, {"label": "MH18BA0691-2626", "value": "2626"}, {"label": "MH18BG4060-2627", "value": "2627"}, {"label": "MP12H0509  -2628", "value": "2628"}, {"label": "RJ04GA2826-2629", "value": "2629"}, {"label": "MH34BG9523-2630", "value": "2630"}, {"label": "DL1LR3080-2631", "value": "2631"}, {"label": "GJ01DX8692-2632", "value": "2632"}, {"label": "MH28BB1819-2633", "value": "2633"}, {"label": "HR55AN2624-2634", "value": "2634"}, {"label": "PB11CL7925-2635", "value": "2635"}, {"label": "PB11CBU8425-2636", "value": "2636"}, {"label": "HR64A3719-2637", "value": "2637"}, {"label": "GJ06AX3671-2638", "value": "2638"}, {"label": "UP14JT-1223-2639", "value": "2639"}, {"label": "UP14JT-1223-2640", "value": "2640"}, {"label": "HR73B0933-2641", "value": "2641"}, {"label": "RJ46GA4303-2642", "value": "2642"}, {"label": "DN09H9932-2643", "value": "2643"}, {"label": "DN09P9150-2644", "value": "2644"}, {"label": "HP93-0870-2645", "value": "2645"}, {"label": "MH12HD1549-2646", "value": "2646"}, {"label": "PB06BC3955-2647", "value": "2647"}, {"label": "UP14ET9291-2648", "value": "2648"}, {"label": "UP14ET9291-2649", "value": "2649"}, {"label": "HR63D3795-2650", "value": "2650"}, {"label": "MP13GB4492-2651", "value": "2651"}, {"label": "GJ23AT5026-2652", "value": "2652"}, {"label": "GJ23AT5026-2653", "value": "2653"}, {"label": "MH30AV1242-2654", "value": "2654"}, {"label": "MH18BG4645-2655", "value": "2655"}, {"label": "MH20DE6727-2656", "value": "2656"}, {"label": "RJ21GC3343-2657", "value": "2657"}, {"label": "MH40CD6387-2658", "value": "2658"}, {"label": "MH46BF6014-2659", "value": "2659"}, {"label": "MH14JL8137-2660", "value": "2660"}, {"label": "HR55AP7059-2661", "value": "2661"}, {"label": "KA53AA1836-2662", "value": "2662"}, {"label": "HR38AC9657-2663", "value": "2663"}, {"label": "RJ27GD3496-2664", "value": "2664"}, {"label": "MP67G0473-2665", "value": "2665"}, {"label": "MH14GD6052-2666", "value": "2666"}, {"label": "GJ12BZ8786-2667", "value": "2667"}, {"label": "DL1LAE0776 -2668", "value": "2668"}, {"label": "RJ01GC0416-2669", "value": "2669"}, {"label": "HP93-2458-2670", "value": "2670"}, {"label": "CG07CK6974 -2671", "value": "2671"}, {"label": "RJ18GC2865 -2672", "value": "2672"}, {"label": "RJ09GD6322-2673", "value": "2673"}, {"label": "RJ01GC9554-2674", "value": "2674"}, {"label": "RJ01GC9554-2675", "value": "2675"}, {"label": "RJ01GC9554-2676", "value": "2676"}, {"label": "RJ14GC6926-2677", "value": "2677"}, {"label": "RJ47GA1168-2678", "value": "2678"}, {"label": "RJ01GC0088-2679", "value": "2679"}, {"label": "RJ06GC1269 -2680", "value": "2680"}, {"label": "HR73B-4781-2681", "value": "2681"}, {"label": "-2682", "value": "2682"}, {"label": "RJ09GB7625-2683", "value": "2683"}, {"label": "RJ01GB9922-2684", "value": "2684"}, {"label": "MH46BB0874 -2685", "value": "2685"}, {"label": "RJ01GC4085 -2686", "value": "2686"}, {"label": "GJ06BT4465-2687", "value": "2687"}, {"label": "HR73B-4781-2688", "value": "2688"}, {"label": "RJ06GC1269 -2689", "value": "2689"}, {"label": "MH48CB4310-2690", "value": "2690"}, {"label": "MH 13 DO 5336-2692", "value": "2692"}, {"label": "RJ14GP8686 -2691", "value": "2691"}, {"label": "RJ43GA4731-2693", "value": "2693"}, {"label": "MH47AS2186-2694", "value": "2694"}, {"label": "MH47AS-2186-2695", "value": "2695"}, {"label": "HR68C3517-2696", "value": "2696"}, {"label": "HR38W0257-2697", "value": "2697"}, {"label": "GJ27TD5470-2698", "value": "2698"}, {"label": "UP16KT4927 -2699", "value": "2699"}, {"label": "HP12H-5699-2700", "value": "2700"}, {"label": "-2701", "value": "2701"}, {"label": "MH48CB-3248-2702", "value": "2702"}, {"label": "RJ14GJ4053 -2703", "value": "2703"}, {"label": "RJ09GB-7625-2704", "value": "2704"}, {"label": "HR63E0682-2705", "value": "2705"}, {"label": "HR63E5102 -2706", "value": "2706"}, {"label": "JK01AG6926 -2707", "value": "2707"}, {"label": "RJ01GC5251-2708", "value": "2708"}, {"label": "HR73B2240 -2709", "value": "2709"}, {"label": "GJ27X8140-2710", "value": "2710"}, {"label": "HR55X6706 -2711", "value": "2711"}];
+       var multipleCancel1 = new Choices('#choices-lr', {
+         
+         choices: js_arr,
+    removeItemButton: true,
+    maxItemCount:38,
+    
+     
+    
+    });
+    
+    </script>
+
+
+
+  <!-- end document-->
+</body>
+
+</html>

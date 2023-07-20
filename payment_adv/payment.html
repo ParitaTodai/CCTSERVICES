@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="cctHome.css"> -->
+  <title>Hello, world!</title>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="payment.css">
+  <script src="payment.js"></script>
+  <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.min.js" 
+        integrity=
+"sha512vDKWohFHe2vkVWXHp3tKvIxxXg0pJxeid5eo+UjdjME3DBFBn2F8yWOE0XmiFcFbXxrEOR1JriWEno5Ckpn15A==" 
+        crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+
+  <!-- test -->
+  <div>
+    <div class="choices" data-type="select-one" role="combobox" tabindex="0" aria-autocomplete="list"
+      aria-haspopup="true" aria-expanded="false" dir="ltr">
+      <div class="choices__inner"><select id="choices-voucher" name="vno" required="" placeholder="Select upto 30 tags"
+          class="choices__input is-hidden" tabindex="-1" aria-hidden="true" data-choice="active">
+          <option value="778" selected="">-778 LR-</option>
+        </select>
+        <div class="choices__list choices__list--single">
+          <div class="choices__item choices__item--selectable" data-item="" data-id="1" data-value="778"
+            data-custom-properties="null" data-deletable="" aria-selected="true">
+            -778 LR-
+            <button type="button" class="choices__button" data-button="" aria-label="Remove item: '778'">
+              Remove item
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="choices__list choices__list--dropdown" aria-expanded="false"><input type="text"
+          class="choices__input choices__input--cloned" autocomplete="off" autocapitalize="off" spellcheck="false"
+          role="textbox" aria-autocomplete="list" placeholder="">
+        <div class="choices__list" dir="ltr" role="listbox">
+          <div class="choices__item choices__item--choice choices__item--selectable is-highlighted"
+            data-select-text="Press to select" data-choice="" data-id="1" data-value="778" data-choice-selectable=""
+            id="choices--choices-voucher-item-choice-1" role="option" aria-selected="true">
+            -778 LR-
+          </div>
+          <div class="choices__item choices__item--choice choices__item--selectable" data-select-text="Press to select"
+            data-choice="" data-id="2" data-value="736" data-choice-selectable=""
+            id="choices--choices-voucher-item-choice-2" role="option">
+            736
+          </div>
+          <div class="choices__item choices__item--choice choices__item--selectable" data-select-text="Press to select"
+            data-choice="" data-id="3" data-value="340" data-choice-selectable=""
+            id="choices--choices-voucher-item-choice-3" role="option">
+            Alok-340 LR-2143
+          </div>
+          <div class="choices__item choices__item--choice choices__item--selectable" data-select-text="Press to select"
+            data-choice="" data-id="4" data-value="348" data-choice-selectable=""
+            id="choices--choices-voucher-item-choice-4" role="option">
+            Alok-348 LR-2146
+          </div>
+          <div class="choices__item choices__item--choice choices__item--selectable" data-select-text="Press to select"
+            data-choice="" data-id="5" data-value="356" data-choice-selectable=""
+            id="choices--choices-voucher-item-choice-5" role="option">
+            Alok-356 LR-2146
+          </div>
+          <div class="choices__item choices__item--choice choices__item--selectable" data-select-text="Press to select"
+            data-choice="" data-id="6" data-value="416" data-choice-selectable=""
+            id="choices--choices-voucher-item-choice-6" role="option">
+            Alok-416 LR-2146
+          </div>
+          <div class="choices__item choices__item--choice choices__item--selectable" data-select-text="Press to select"
+            data-choice="" data-id="7" data-value="487" data-choice-selectable=""
+            id="choices--choices-voucher-item-choice-7" role="option">
+            Alok-487 LR-2288
+          </div>
+          <div class="choices__item choices__item--choice choices__item--selectable" data-select-text="Press to select"
+            data-choice="" data-id="8" data-value="505" data-choice-selectable=""
+            id="choices--choices-voucher-item-choice-8" role="option">
+            Alok-505 LR-2309
+          </div>
+          <div class="choices__item choices__item--choice choices__item--selectable" data-select-text="Press to select"
+            data-choice="" data-id="9" data-value="591" data-choice-selectable=""
+            id="choices--choices-voucher-item-choice-9" role="option">
+            Alok-591 LR-2402
+          </div>
+          <div class="choices__item choices__item--choice choices__item--selectable" data-select-text="Press to select"
+            data-choice="" data-id="10" data-value="610" data-choice-selectable=""
+            id="choices--choices-voucher-item-choice-10" role="option">
+            Alok-610 LR-2426
+          </div>
+        
+         
+   <div class="choices__item choices__item--choice choices__item--selectable" data-select-text="Press to select"
+            data-choice="" data-id="750" data-value="842" data-choice-selectable=""
+            id="choices--choices-voucher-item-choice-750" role="option">
+            Shashikant-842 LR-2708
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+    <div class="wrapper wrapper--w680">
+        <div class="card card-4">
+<div class="card-body">
+    <!-- new -->
+    <div class="dropdown_box">
+        <div class="dropdown">
+            <label class="label">Edit Voucher No.</label>
+            <button onclick="myFunction()" class="dropbtn dropdown_box">736</button>
+            <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                <a href="#about">About</a>
+                <a href="#base">Base</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+                <a href="#custom">Custom</a>
+                <a href="#support">Support</a>
+                <a href="#tools">Tools</a>
+            </div>
+        </div>
+    </div>
+
+    <form action="updateDetail.php" method="POST" target="_blank">
+        <div class="input-group">
+
+        </div>
+    </form>
+
+    <div class="p-t-15">
+        <button class="btn btn--radius-2 btn--blue" type="submit" name="edit" value="Edit">Edit</button>
+        <button class="btn btn--radius-2 btn--blue" type="submit" name="copy" value="Copy">Copy</button>
+    </div>
+    <h2 class="title">Payment Advise Slip For CCT Services</h2>
+    <form action="../generateLRpdf.html" id ="form-print" method="GET" target="_blank">
+        <div class="row row-space">
+
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Status</label>
+                    <div class="p-t-10">
+                        <label class="radio-container m-r-45">Partial
+                            <input type="radio" checked="checked" name="status" value="P">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="radio-container">Completed
+                            <input type="radio" name="status" value="C">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Employe Name</label>
+                    <div class="rs-select2 js-select-simple select--no-search">
+                        <select name="ename" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+                            <option disabled="disabled" selected="selected">Choose option</option>
+                            <option value="Shashikant">Shashikant</option>
+                            <option value="Deepak">Deepak</option>
+                            <option value="Chandar">Chandar</option>
+                            <option value="Alok">Alok</option>
+                            <option value="Naveen">Naveen</option>
+                        </select><span class="select2 select2-container select2-container--default" dir="ltr"
+                            style="width: 110px;"><span class="selection"><span
+                                    class="select2-selection select2-selection--single" role="combobox"
+                                    aria-haspopup="true" aria-expanded="false" tabindex="0"
+                                    aria-labelledby="select2-ename-93-container"><span
+                                        class="select2-selection__rendered" id="select2-ename-93-container"
+                                        title="Choose option">Choose option</span><span class="select2-selection__arrow"
+                                        role="presentation"><b role="presentation"></b></span></span></span><span
+                                class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        <div class="select-dropdown"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Voucher No.</label>
+                    <input class="input--style-4" type="text" readonly="" name="vouchno" value="851">
+                </div>
+            </div>
+        </div>
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Supplier Name</label>
+                    <input class="input--style-4" type="text" name="sname" value="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label" id="label">Customer Name.</label>
+                    <input class="input--style-4" type="text" name="cname">
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Supplier Address</label>
+                    <input class="input--style-4" type="text" name="saddress">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Supplier City</label>
+                    <input class="input--style-4" type="text" name="scity">
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Supplier Mobile No</label>
+                    <input class="input--style-4" type="text" name="smobile">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Supplier Email Id</label>
+                    <input class="input--style-4" type="text" name="semail">
+                </div>
+            </div>
+        </div>
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Vehicle Placement Date</label>
+                    <div class="input-group-icon">
+                        <input class="input--style-4 js-datepicker" id="vpd" type="text" name="vpd">
+                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">From</label>
+                    <input class="input--style-4" type="text" name="vpdf">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">To</label>
+                    <input class="input--style-4" type="text" name="vpdt">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Vehicle No.</label>
+                    <input class="input--style-4" type="bweight" name="vnumber">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Vehicle Type</label>
+                    <input class="input--style-4" type="text" name="vtype">
+                </div>
+            </div>
+        </div>
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Size</label>
+                    <input class="input--style-4" type="bweight" name="vsize">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Capacity</label>
+                    <input class="input--style-4" type="text" name="vcapacity">
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Lorry Receipt No.</label>
+                    <input class="input--style-4" type="bweight" name="lrnumber">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Date</label>
+                    <div class="input-group-icon">
+                        <input class="input--style-4 js-datepicker2" type="text" id="ldate" name="ldate">
+                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar2"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Sailing Value</label>
+                    <input class="input--style-4 bilamt" type="text" id="sailingval" value="" name="sailingval">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Purchase Value</label>
+                    <input class="input--style-4 balpa tpc" type="text" id="purchaseval" value="" name="purchaseval">
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Advance</label>
+                    <input class="input--style-4 tamt balpa" type="text" id="advance" name="advance" value="">
+                </div>
+            </div>
+
+        </div>
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Advance Himali</label>
+                    <input class="input--style-4 tamt" type="text" id="himali" value="" name="himali">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Advance Himali Paid</label>
+                    <input readonly="" class="input--style-4" type="bweight" id="adhimalipaid" name="adhimalipaid"
+                        value="">
+                </div>
+            </div>
+
+        </div>
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Balance Himali</label>
+                    <input readonly="" class="input--style-4" type="text" id="blhimali" value="" name="blhimali">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Balance Himali Paid</label>
+                    <input readonly="" class="input--style-4" type="text" id="blhimalipaid" value=""
+                        name="blhimalipaid">
+                </div>
+            </div>
+        </div>
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Transfer Amount</label>
+                    <input readonly="" class="input--style-4" type="text" value="" id="transferamt" name="transferamt">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Balance Payment</label>
+                    <input readonly="" class="input--style-4" type="text" id="balpayment" value="" name="balpayment">
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Bank Account No.</label>
+                    <input class="input--style-4" type="bweight" name="acnumber">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">IFSC Code</label>
+                    <input class="input--style-4" type="text" name="ifsc">
+                </div>
+            </div>
+        </div>
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">BUYING EXTRA RUNING CHARGES</label>
+                    <input readonly="" class="input--style-4 tpc" type="text" id="berc" value="" name="berc">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">SAILING EXTRA RUNNING </label>
+                    <input readonly="" class="input--style-4 bilamt" type="text" id="serc" value="" name="serc">
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">BUYING LOADING CHARGES</label>
+                    <input readonly="" class="input--style-4 tpc" type="bweight" id="blc" value="" name="blc">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">SAILING LOADING CHARGES</label>
+                    <input readonly="" class="input--style-4 bilamt" type="text" id="slc" value="" name="slc">
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">BUYING UNLOADING CHARGES</label>
+                    <input readonly="" class="input--style-4 tpc" type="bweight" id="buc" value="" name="buc">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">SAILING UNLOADING</label>
+                    <input readonly="" class="input--style-4 bilamt" type="text" id="suc" value="" name="suc">
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">BUYING EXTRA CHARGES</label>
+                    <input readonly="" class="input--style-4 tpc" type="bweight" id="bec" value="" name="bec">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">SAILING EXTRA CHARGES</label>
+                    <input readonly="" class="input--style-4 bilamt" type="text" id="sec" value="" name="sec">
+                </div>
+            </div>
+        </div>
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">RTO CHALLAN</label>
+                    <div class="">
+                        <div class="choices" data-type="select-multiple" role="combobox" aria-autocomplete="list"
+                            aria-haspopup="true" aria-expanded="false" dir="ltr">
+                            <div class="choices__inner"><select readonly="" id="choices-multiple-remove-button"
+                                    name="rchallan[]" placeholder="Select upto 30 tags" multiple=""
+                                    class="choices__input is-hidden" tabindex="-1" aria-hidden="true"
+                                    data-choice="active"></select>
+                                <div class="choices__list choices__list--multiple"></div><input type="text"
+                                    class="choices__input choices__input--cloned" autocomplete="off"
+                                    autocapitalize="off" spellcheck="false" role="textbox" aria-autocomplete="list"
+                                    placeholder="Select upto 30 tags" style="width: 124px;">
+                            </div>
+                            <div class="choices__list choices__list--dropdown" aria-expanded="false">
+                                <div class="choices__list" dir="ltr" role="listbox" aria-multiselectable="true">
+                                    <div class="choices__item choices__item--choice choices__item--selectable is-highlighted"
+                                        data-select-text="Press to select" data-choice="" data-id="1"
+                                        data-value="Andaman and Nicobar Islands" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-1" role="option"
+                                        aria-selected="true">
+                                        Andaman and Nicobar Islands
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="2"
+                                        data-value="Andhra Pradesh" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-2" role="option">
+                                        Andhra Pradesh
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="3"
+                                        data-value="Arunachal Pradesh" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-3" role="option">
+                                        Arunachal Pradesh
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="4" data-value="Assam"
+                                        data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-4" role="option">
+                                        Assam
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="5" data-value="Assam"
+                                        data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-5" role="option">
+                                        Assam
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="6"
+                                        data-value="Chandigarh" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-6" role="option">
+                                        Chandigarh
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="7"
+                                        data-value="Chhattisgarh" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-7" role="option">
+                                        Chhattisgarh
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="8"
+                                        data-value="Dadra and Nagar Haveli" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-8" role="option">
+                                        Dadra and Nagar Haveli
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="9"
+                                        data-value="Daman and Diu" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-9" role="option">
+                                        Daman and Diu
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="10"
+                                        data-value="Delhi" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-10" role="option">
+                                        Delhi
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="11" data-value="Goa"
+                                        data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-11" role="option">
+                                        Goa
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="12"
+                                        data-value="Gujarat" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-12" role="option">
+                                        Gujarat
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="13"
+                                        data-value="Haryana" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-13" role="option">
+                                        Haryana
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="14"
+                                        data-value="Himachal Pradesh" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-14" role="option">
+                                        Himachal Pradesh
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="15"
+                                        data-value="Jammu and Kashmir" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-15" role="option">
+                                        Jammu and Kashmir
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="16"
+                                        data-value="Jharkhand" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-16" role="option">
+                                        Jharkhand
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="17"
+                                        data-value="Karnataka" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-17" role="option">
+                                        Karnataka
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="18"
+                                        data-value="Kerala" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-18" role="option">
+                                        Kerala
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="19"
+                                        data-value="Ladakh" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-19" role="option">
+                                        Ladakh
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="20"
+                                        data-value="Lakshadweep" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-20" role="option">
+                                        Lakshadweep
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="21"
+                                        data-value="Madhya Pradesh" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-21" role="option">
+                                        Madhya Pradesh
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="22"
+                                        data-value="Maharashtra" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-22" role="option">
+                                        Maharashtra
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="23"
+                                        data-value="Manipur" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-23" role="option">
+                                        Manipur
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="24"
+                                        data-value="Meghalaya" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-24" role="option">
+                                        Meghalaya
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="25"
+                                        data-value="Mizoram" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-25" role="option">
+                                        Mizoram
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="26"
+                                        data-value="Nagaland" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-26" role="option">
+                                        Nagaland
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="27"
+                                        data-value="Odisha" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-27" role="option">
+                                        Odisha
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="28"
+                                        data-value="Puducherry" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-28" role="option">
+                                        Puducherry
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="29"
+                                        data-value="Punjab" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-29" role="option">
+                                        Punjab
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="30"
+                                        data-value="Rajasthan" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-30" role="option">
+                                        Rajasthan
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="31"
+                                        data-value="Sikkim" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-31" role="option">
+                                        Sikkim
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="32"
+                                        data-value="Tamil Nadu" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-32" role="option">
+                                        Tamil Nadu
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="33"
+                                        data-value="Telangana" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-33" role="option">
+                                        Telangana
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="34"
+                                        data-value="Tripura" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-34" role="option">
+                                        Tripura
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="35"
+                                        data-value="Uttar Pradesh" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-35" role="option">
+                                        Uttar Pradesh
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="36"
+                                        data-value="Uttarakhand" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-36" role="option">
+                                        Uttarakhand
+                                    </div>
+                                    <div class="choices__item choices__item--choice choices__item--selectable"
+                                        data-select-text="Press to select" data-choice="" data-id="37"
+                                        data-value="West Bengal" data-choice-selectable=""
+                                        id="choices--choices-multiple-remove-button-item-choice-37" role="option">
+                                        West Bengal
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="input-group">
+                    <label class="label">RTO Charges</label>
+                    <input readonly="" class="input--style-4 bilamt tpc" type="text" id="rtocharge" value=""
+                        name="rtocharge">
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Buying Cancelation Charges</label>
+                    <input readonly="" class="input--style-4 tpc" type="text" id="bcancharge" value=""
+                        name="bcancharge">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Selling Cancelation Charges</label>
+                    <input readonly="" class="input--style-4 bilamt" type="text" id="scancharge" value=""
+                        name="scancharge">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Buying LD Charges</label>
+                    <input readonly="" class="input--style-4 tpc" type="text" id="bldcharge" value="" name="bldcharge">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Selling LD Charges</label>
+                    <input readonly="" class="input--style-4 bilamt" type="text" id="sldcharge" value=""
+                        name="sldcharge">
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Buying ULD Charges</label>
+                    <input readonly="" class="input--style-4 tpc" type="text" id="buldcharge" value=""
+                        name="buldcharge">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Selling ULD Charges</label>
+                    <input readonly="" class="input--style-4 bilamt" type="text" value="" id="suldcharge"
+                        name="suldcharge">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">BALANCE PAID</label>
+                    <input readonly="" class="input--style-4" value="" type="text" name="btbp">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">COMM</label>
+                    <input readonly="" class="input--style-4" type="text" value="" name="comm">
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Billing Amount</label>
+                    <input readonly="" class="input--style-4" type="text" id="bamt" value="" name="bamt">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Total Purchase Cost</label>
+                    <input readonly="" class="input--style-4" type="text" id="tpcost" value="" name="tpcost">
+                </div>
+            </div>
+        </div>
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">PROFIT IN INR</label>
+                    <input readonly="" class="input--style-4" type="text" id="pii" value="" name="pii">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">PROFIT IN %</label>
+                    <input readonly="" class="input--style-4" type="text" id="pip" value="" name="pip">
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Invoice No.</label>
+                    <input class="input--style-4" type="text" id="invno" value="" name="invno">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Invoice Amount</label>
+                    <input class="input--style-4" type="text" id="invamt" value="" name="invamt">
+                </div>
+            </div>
+        </div>
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Invoice Date</label>
+                    <div class="input-group-icon">
+                        <input class="input--style-4 js-datepicker3" type="text" id="invdate" name="invdate">
+                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar3"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Amount Receved</label>
+                    <input class="input--style-4" type="text" id="amtreceive" value="" name="amtreceive">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Amount Receved Date</label>
+                    <div class="input-group-icon">
+                        <input class="input--style-4 js-datepicker4" type="text" id="amtrecevedate"
+                            name="amtrecevedate">
+                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar4"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row row-space">
+            <div class="col-2">
+                <div class="input-group">
+                    <label class="label">Amount Diff.</label>
+                    <input class="input--style-4" type="text" id="amtdiff" value="" name="amtdiff">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="p-t-15">
+            <!-- <button class="btn btn--radius-2 btn--blue" type="submit" name="generate-pdf" -->
+                <!-- value="generate-pdf" onclick="submit()">Submit</button> -->
+            <button class="btn btn--radius-2 btn--blue" id="submit" type="submit" name="view-pdf" value="view-pdf">View
+                File</button>
+        </div>
+    </form>
+    <div class="p-t-15">
+        <button class="btn btn--radius-2 btn--blue" type="submit" name="generate-pdf"
+            value="generate-pdf" onclick="submit()">Submit</button>
+    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+ 
+
+</div>
+  <!-- end document-->
+</body>
+
+</html>
